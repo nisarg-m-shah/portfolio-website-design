@@ -40,7 +40,7 @@
       "id": "featured-3",
       "title": "Debunking the Left-Right Batting Advantage",
       "description": "A detailed analysis of the left-right batting advantage in test cricket.",
-      "thumbnail": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=400&h=600&fit=crop",
+      "thumbnail": "/images/Left-Right.png",
       "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
       "tags": ["Socket.io", "WebRTC", "React", "Redis"],
       "year": "2023",
