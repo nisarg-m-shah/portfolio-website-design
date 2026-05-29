@@ -17,37 +17,36 @@
       "thumbnail": "/images/Navicore.png",
       "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
       "tags": ["Next.js", "AI/ML", "TypeScript", "D3.js"],
-      "year": "2024",
+      "year": "2026",
       "duration": "3 months",
       "maturityRating": "Full Stack",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
+      "liveUrl": "https://navicore.streamlit.app/",
+      "githubUrl": "https://github.com/nisarg-m-shah/Mumbai-Railway-GPS"
     },
     {
       "id": "featured-2",
-      "title": "E-Commerce Platform",
-      "description": "Scalable e-commerce solution with headless CMS, payment processing, inventory management, and real-time order tracking. Features Stripe integration and webhooks.",
-      "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop",
+      "title": "IPL Fantasy League Dashboard",
+      "description": "Dashboard that scrapes live match data and displays detailed points for each team, fantasy app style.",
+      "thumbnail": "/images/CFC-Fantasy-League.png",
       "previewVideo": "https://www.w3schools.com/html/movie.mp4",
       "tags": ["React", "Node.js", "Stripe", "PostgreSQL"],
-      "year": "2024",
+      "year": "2026",
       "duration": "4 months",
       "maturityRating": "Full Stack",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
+      "liveUrl": "https://cfc-fantasy-league.streamlit.app",
+      "githubUrl": "https://github.com/nisarg-m-shah/IPL-Fantasy-2026"
     },
     {
       "id": "featured-3",
-      "title": "Real-Time Chat App",
-      "description": "End-to-end encrypted messaging platform with video calls, file sharing, and group chats. Built with WebSockets and WebRTC for seamless real-time communication.",
+      "title": "Debunking the Left-Right Batting Advantage",
+      "description": "A detailed analysis of the left-right batting advantage in test cricket.",
       "thumbnail": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=400&h=600&fit=crop",
       "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
       "tags": ["Socket.io", "WebRTC", "React", "Redis"],
       "year": "2023",
       "duration": "2 months",
       "maturityRating": "Backend Heavy",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
+      "liveUrl": "https://drive.google.com/file/d/1q5uOqd5p3Fu06hYY4xN2_rtJLzx0Z2jW/view?usp=sharing"
     }
   ],
   "allProjects": [
