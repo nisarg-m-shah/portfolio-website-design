@@ -1,0 +1,245 @@
+{
+  "profile": {
+    "name": "Nisarg",
+    "tagline": "Full Stack Developer",
+    "description": "Crafting digital experiences that push the boundaries of web technology. Building the future, one line of code at a time.",
+    "heroVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "heroImage": "/images/hero-bg.jpg",
+    "maturityRating": "Developer",
+    "year": "2024",
+    "duration": "5+ Years Experience"
+  },
+  "featuredProjects": [
+    {
+      "id": "featured-1",
+      "title": "AI Dashboard",
+      "description": "A comprehensive AI-powered analytics dashboard with real-time data visualization, machine learning insights, and predictive analytics. Built with Next.js, TensorFlow.js, and D3.",
+      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "tags": ["Next.js", "AI/ML", "TypeScript", "D3.js"],
+      "year": "2024",
+      "duration": "3 months",
+      "maturityRating": "Full Stack",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "featured-2",
+      "title": "E-Commerce Platform",
+      "description": "Scalable e-commerce solution with headless CMS, payment processing, inventory management, and real-time order tracking. Features Stripe integration and webhooks.",
+      "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
+      "tags": ["React", "Node.js", "Stripe", "PostgreSQL"],
+      "year": "2024",
+      "duration": "4 months",
+      "maturityRating": "Full Stack",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "featured-3",
+      "title": "Real-Time Chat App",
+      "description": "End-to-end encrypted messaging platform with video calls, file sharing, and group chats. Built with WebSockets and WebRTC for seamless real-time communication.",
+      "thumbnail": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "tags": ["Socket.io", "WebRTC", "React", "Redis"],
+      "year": "2023",
+      "duration": "2 months",
+      "maturityRating": "Backend Heavy",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    }
+  ],
+  "allProjects": [
+    {
+      "id": "project-1",
+      "title": "Portfolio CMS",
+      "description": "A content management system specifically designed for developer portfolios. Features drag-and-drop editing, markdown support, and automatic SEO optimization.",
+      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
+      "tags": ["Next.js", "Prisma", "tRPC"],
+      "year": "2023",
+      "duration": "6 weeks",
+      "maturityRating": "Full Stack",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "project-2",
+      "title": "Weather App",
+      "description": "Beautiful weather application with animated backgrounds, 7-day forecasts, and location-based services. Includes air quality index and UV tracking.",
+      "thumbnail": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "tags": ["React Native", "Weather API", "Animations"],
+      "year": "2023",
+      "duration": "3 weeks",
+      "maturityRating": "Frontend",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "project-3",
+      "title": "Task Manager",
+      "description": "Kanban-style task management tool with team collaboration, time tracking, and automated workflows. Integrates with popular tools like Slack and GitHub.",
+      "thumbnail": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
+      "tags": ["Vue.js", "Firebase", "Vuex"],
+      "year": "2023",
+      "duration": "2 months",
+      "maturityRating": "Full Stack",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "project-4",
+      "title": "Fitness Tracker",
+      "description": "Comprehensive fitness tracking application with workout plans, nutrition logging, progress analytics, and social features for workout buddies.",
+      "thumbnail": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "tags": ["React", "Node.js", "MongoDB"],
+      "year": "2022",
+      "duration": "3 months",
+      "maturityRating": "Full Stack",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "project-5",
+      "title": "Music Visualizer",
+      "description": "Audio reactive visual experience using Web Audio API and Three.js. Creates stunning 3D visualizations that respond to music in real-time.",
+      "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
+      "tags": ["Three.js", "Web Audio", "GLSL"],
+      "year": "2022",
+      "duration": "1 month",
+      "maturityRating": "Creative",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "project-6",
+      "title": "Recipe Finder",
+      "description": "AI-powered recipe discovery app with ingredient recognition, meal planning, and shopping list generation. Uses image recognition for ingredient scanning.",
+      "thumbnail": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400&h=600&fit=crop",
+      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "tags": ["Python", "TensorFlow", "FastAPI"],
+      "year": "2022",
+      "duration": "2 months",
+      "maturityRating": "AI/ML",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "blog-1",
+      "title": "Building Scalable APIs",
+      "description": "A deep dive into designing and implementing APIs that can handle millions of requests. Covers rate limiting, caching strategies, and database optimization.",
+      "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=600&fit=crop",
+      "previewVideo": "",
+      "tags": ["API Design", "Backend", "Performance"],
+      "year": "2024",
+      "duration": "8 min read",
+      "maturityRating": "Technical",
+      "url": "https://example.com/blog/scalable-apis"
+    },
+    {
+      "id": "blog-2",
+      "title": "React Server Components",
+      "description": "Understanding the new paradigm of React Server Components and how they change the way we build web applications. Includes practical examples and migration tips.",
+      "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=600&fit=crop",
+      "previewVideo": "",
+      "tags": ["React", "Next.js", "Performance"],
+      "year": "2024",
+      "duration": "12 min read",
+      "maturityRating": "Technical",
+      "url": "https://example.com/blog/rsc"
+    },
+    {
+      "id": "blog-3",
+      "title": "CSS Container Queries",
+      "description": "The future of responsive design is here. Learn how container queries enable component-level responsiveness and why they matter for design systems.",
+      "thumbnail": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=400&h=600&fit=crop",
+      "previewVideo": "",
+      "tags": ["CSS", "Responsive", "Frontend"],
+      "year": "2024",
+      "duration": "6 min read",
+      "maturityRating": "Frontend",
+      "url": "https://example.com/blog/container-queries"
+    },
+    {
+      "id": "blog-4",
+      "title": "TypeScript Best Practices",
+      "description": "Level up your TypeScript skills with advanced patterns, utility types, and real-world examples from production codebases.",
+      "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=600&fit=crop",
+      "previewVideo": "",
+      "tags": ["TypeScript", "Best Practices", "DX"],
+      "year": "2023",
+      "duration": "10 min read",
+      "maturityRating": "Technical",
+      "url": "https://example.com/blog/typescript"
+    },
+    {
+      "id": "blog-5",
+      "title": "Web Performance Deep Dive",
+      "description": "From Core Web Vitals to advanced optimization techniques. Everything you need to know about making your web apps blazing fast.",
+      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop",
+      "previewVideo": "",
+      "tags": ["Performance", "Web Vitals", "Optimization"],
+      "year": "2023",
+      "duration": "15 min read",
+      "maturityRating": "Advanced",
+      "url": "https://example.com/blog/performance"
+    }
+  ],
+  "connect": [
+    {
+      "id": "connect-1",
+      "title": "GitHub",
+      "description": "Check out my open source projects, contributions, and code repositories. I actively contribute to the developer community.",
+      "thumbnail": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=600&fit=crop",
+      "icon": "github",
+      "url": "https://github.com"
+    },
+    {
+      "id": "connect-2",
+      "title": "LinkedIn",
+      "description": "Connect with me professionally. Let's discuss opportunities, collaborations, or just have a chat about technology.",
+      "thumbnail": "https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=400&h=600&fit=crop",
+      "icon": "linkedin",
+      "url": "https://linkedin.com"
+    },
+    {
+      "id": "connect-3",
+      "title": "Twitter / X",
+      "description": "Follow me for tech insights, development tips, and occasional hot takes on the latest in web development.",
+      "thumbnail": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=400&h=600&fit=crop",
+      "icon": "twitter",
+      "url": "https://twitter.com"
+    },
+    {
+      "id": "connect-4",
+      "title": "Email",
+      "description": "Want to work together or have a question? Drop me an email and I'll get back to you as soon as possible.",
+      "thumbnail": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=600&fit=crop",
+      "icon": "mail",
+      "url": "mailto:hello@nisarg.dev"
+    },
+    {
+      "id": "connect-5",
+      "title": "YouTube",
+      "description": "Watch tutorials, project walkthroughs, and coding sessions. Learning in public and sharing knowledge.",
+      "thumbnail": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&h=600&fit=crop",
+      "icon": "youtube",
+      "url": "https://youtube.com"
+    },
+    {
+      "id": "connect-6",
+      "title": "Discord",
+      "description": "Join my community server for discussions, code reviews, and hanging out with fellow developers.",
+      "thumbnail": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=400&h=600&fit=crop",
+      "icon": "discord",
+      "url": "https://discord.gg"
+    }
+  ]
+}
