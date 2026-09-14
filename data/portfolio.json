@@ -2,7 +2,7 @@
   "profile": {
     "name": "Nisarg Shah",
     "tagline": "Data Scientist",
-    "description": "Building data-driven solutions through statistical analysis, ML, and large-scale data processing, while exploring cloud, MLOps, and AI engineering.",
+    "description": "Building data-driven solutions through statistical analysis, machine learning, and large-scale data processing, while exploring cloud, MLOps, and AI engineering.",
     "heroVideo": "/images/Portfolio-Page.mp4",
     "heroImage": "/images/hero-bg.jpg",
     "maturityRating": "Data Science · ML · Analytics",
@@ -147,7 +147,7 @@
     },
     {
       "id": "achievement-4",
-      "title": "Intro to SQL",
+      "title": "Intro to Machine Learning",
       "description": "Completed Kaggle's introductory SQL certification, covering fundamental SQL concepts and querying relational data.",
       "thumbnail": "/images/certifications/kaggle-intro-sql.jpg",
       "previewVideo": "",
