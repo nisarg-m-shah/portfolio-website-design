@@ -17,8 +17,8 @@
       "thumbnail": "/images/Uniswap-V3-LP-Prediction.png",
       "previewVideo": "",
       "tags": ["Python", "pandas", "XGBoost", "scikit-learn", "SHAP", "Dune Analytics"],
-      "year": "2024",
-      "duration": "6 months",
+      "year": "2026",
+      "duration": "3 months",
       "maturityRating": "AI/ML",
       "githubUrl": "https://github.com/nisarg-m-shah/Research-Project-1"
     },
@@ -29,8 +29,8 @@
       "thumbnail": "/images/Criteo-CTR-Prediction.png",
       "previewVideo": "",
       "tags": ["Python", "PySpark", "Apache Spark", "scikit-learn", "AWS EC2", "Docker"],
-      "year": "2024",
-      "duration": "3 months",
+      "year": "2026",
+      "duration": "1 month",
       "maturityRating": "AI/ML",
       "githubUrl": "https://github.com/nisarg-m-shah/ET-2-CIA-2"
     },
@@ -42,8 +42,8 @@
       "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
       "tags": ["Socket.io", "WebRTC", "React", "Redis"],
       "year": "2023",
-      "duration": "2 months",
-      "maturityRating": "Backend Heavy",
+      "duration": "3 months",
+      "maturityRating": "Statistical Analysis",
       "liveUrl": "https://drive.google.com/file/d/1q5uOqd5p3Fu06hYY4xN2_rtJLzx0Z2jW/view?usp=sharing"
     }
   ],
@@ -149,8 +149,8 @@
       "id": "achievement-4",
       "title": "Intro to Machine Learning",
       "description": "Completed Kaggle's introductory SQL certification, covering fundamental SQL concepts and querying relational data.",
-      "thumbnail": "/images/certifications/kaggle-intro-sql.png",
-      "previewVideo": "",
+      "thumbnail": "/images/certifications/sql.png",
+      "previewVideo": "/images/certifications/kaggle-intro-sql.png",
       "tags": ["SQL", "Relational Databases", "Data Querying"],
       "year": "",
       "maturityRating": "Data / SQL",

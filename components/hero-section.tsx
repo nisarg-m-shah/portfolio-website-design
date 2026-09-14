@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef, useState, useEffect } from "react"
-import { Play, Info, Volume2, VolumeX } from "lucide-react"
+import { Play, Info, Volume2, VolumeX, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Profile } from "@/types/portfolio"
 
@@ -74,9 +74,12 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
           </div>
 
           {/* Tagline */}
-          <p className="text-lg text-muted-foreground md:text-xl">
-            {profile.tagline}
-          </p>
+          <div className="inline-flex w-fit items-center gap-2.5 rounded-full bg-primary py-2 pl-3.5 pr-5 shadow-lg shadow-primary/30 ring-1 ring-primary-foreground/20">
+            <Sparkles className="h-4 w-4 text-primary-foreground" />
+            <span className="text-sm font-bold uppercase tracking-[0.2em] text-primary-foreground">
+              {profile.tagline}
+            </span>
+          </div>
 
           {/* Description */}
           <p className="max-w-2xl text-base text-secondary-foreground/80 leading-relaxed">
