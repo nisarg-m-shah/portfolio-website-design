@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useState } from "react"
 import Image from "next/image"
-import { X, Play, ExternalLink, Github, Plus, ThumbsUp, ChevronDown } from "lucide-react"
+import { X, Play, ExternalLink, Github, Plus, ThumbsUp, ChevronDown, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
@@ -65,6 +65,10 @@ export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
 
   const hasVideo = 'previewVideo' in item && item.previewVideo
   const hasTags = 'tags' in item && item.tags
+  const descriptionBullets = item.description
+    .split(/(?<=\.)\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean)
 
   return (
     <div
@@ -191,9 +195,16 @@ export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
           )}
 
           {/* Description */}
-          <p className="mb-6 text-base text-secondary-foreground/90 leading-relaxed">
-            {item.description}
-          </p>
+          <ul className="mb-6 space-y-2">
+            {descriptionBullets.map((bullet, idx) => (
+              <li key={idx} className="flex items-start gap-2">
+                <ChevronRight className="mt-1 h-4 w-4 flex-shrink-0 text-primary" />
+                <span className="text-base text-secondary-foreground/90 leading-relaxed">
+                  {bullet}
+                </span>
+              </li>
+            ))}
+          </ul>
 
           {/* Tags */}
           {hasTags && (

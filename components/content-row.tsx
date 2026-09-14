@@ -83,7 +83,7 @@ export function ContentRow<T extends ContentItem>({
               className={cn(
                 "group/card relative flex-shrink-0 cursor-pointer overflow-hidden rounded transition-all duration-300",
                 "w-[140px] md:w-[180px] lg:w-[220px]",
-                hoveredId === item.id && "z-10 scale-110 shadow-2xl"
+                hoveredId === item.id && "z-10 scale-110 shadow-2xl shadow-primary/25 ring-1 ring-primary/60"
               )}
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}
@@ -119,14 +119,6 @@ export function ContentRow<T extends ContentItem>({
                   </p>
                 </div>
               </div>
-
-              {/* Border on hover */}
-              <div
-                className={cn(
-                  "absolute inset-0 rounded border-2 border-transparent transition-colors",
-                  hoveredId === item.id && "border-foreground"
-                )}
-              />
             </div>
           ))}
         </div>
