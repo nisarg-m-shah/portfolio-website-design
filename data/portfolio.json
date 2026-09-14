@@ -136,17 +136,6 @@
     },
     {
       "id": "achievement-3",
-      "title": "Machine Learning and Artificial Intelligence",
-      "description": "Completed a machine learning and artificial intelligence program and built a multi-class sentiment analysis model achieving 86% accuracy.",
-      "thumbnail": "/images/certifications/teachnook-ml-ai.png",
-      "previewVideo": "",
-      "tags": ["Machine Learning", "Artificial Intelligence", "Sentiment Analysis", "Classification"],
-      "year": "2023",
-      "maturityRating": "AI/ML",
-      "issuer": "Teachnook Edutech"
-    },
-    {
-      "id": "achievement-4",
       "title": "Intro to Machine Learning",
       "description": "Completed Kaggle's introductory SQL certification, covering fundamental SQL concepts and querying relational data.",
       "thumbnail": "/images/certifications/sql.png",
@@ -155,6 +144,17 @@
       "year": "",
       "maturityRating": "Data / SQL",
       "issuer": "Kaggle"
+    },
+    {
+      "id": "achievement-4",
+      "title": "Machine Learning and Artificial Intelligence",
+      "description": "Completed a machine learning and artificial intelligence program and built a multi-class sentiment analysis model achieving 86% accuracy.",
+      "thumbnail": "/images/certifications/teachnook-ml-ai.png",
+      "previewVideo": "",
+      "tags": ["Machine Learning", "Artificial Intelligence", "Sentiment Analysis", "Classification"],
+      "year": "2023",
+      "maturityRating": "AI/ML",
+      "issuer": "Teachnook Edutech"
     }
   ],
   "connect": [
