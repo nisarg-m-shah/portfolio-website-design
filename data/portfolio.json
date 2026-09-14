@@ -192,19 +192,19 @@
     },
     {
       "id": "connect-3",
-      "title": "X",
-      "description": "Follow me for tech insights, development tips, and occasional hot takes on the latest in web development.",
-      "thumbnail": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=400&h=600&fit=crop",
-      "icon": "twitter",
-      "url": "https://x.com/nisarg522"
-    },
-    {
-      "id": "connect-4",
       "title": "Email",
       "description": "Want to work together or have a question? Drop me an email and I'll get back to you as soon as possible.",
       "thumbnail": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=600&fit=crop",
       "icon": "mail",
       "url": "mailto:nisargs018@gmail.com"
+    },
+    {
+      "id": "connect-4",
+      "title": "X",
+      "description": "Follow me for tech insights, development tips, and occasional hot takes on the latest in web development.",
+      "thumbnail": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=400&h=600&fit=crop",
+      "icon": "twitter",
+      "url": "https://x.com/nisarg522"
     }
   ]
 }
