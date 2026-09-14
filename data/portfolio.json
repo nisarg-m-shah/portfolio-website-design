@@ -114,63 +114,47 @@
   "achievements": [
     {
       "id": "achievement-1",
-      "title": "AWS Certified Cloud Practitioner",
-      "description": "Foundational understanding of AWS cloud concepts, core services, security, architecture, pricing, and support. Demonstrates working knowledge of compute, storage, networking, and database services on AWS.",
-      "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=600&fit=crop",
+      "title": "3rd Place — HSNC University Datathon",
+      "description": "Developed a data-driven scoring model analysing ASI 2022–23 data to optimise manufacturing strategy.",
+      "thumbnail": "/images/achievements/hsnc-datathon.jpg",
       "previewVideo": "",
-      "tags": ["AWS", "Cloud", "Infrastructure"],
-      "year": "2024",
-      "maturityRating": "Cloud",
-      "issuer": "Amazon Web Services",
-      "credentialUrl": "https://example.com/credentials/aws-cloud-practitioner"
+      "tags": ["Python", "Tableau", "Data Analysis", "Scoring Models", "Manufacturing Analytics"],
+      "year": "2025",
+      "maturityRating": "Datathon / Data Science",
+      "issuer": "HSNC University"
     },
     {
       "id": "achievement-2",
-      "title": "Google Data Analytics Professional Certificate",
-      "description": "Eight-course program covering the data analysis workflow: asking questions, preparing and cleaning data, analysing with SQL and spreadsheets, and visualising results to share insights.",
-      "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=600&fit=crop",
+      "title": "AWS Academy Graduate — Cloud Foundations",
+      "description": "Completed AWS Academy's Cloud Foundations program, covering foundational concepts in cloud computing and AWS.",
+      "thumbnail": "/images/certifications/aws-cloud-foundations.jpg",
       "previewVideo": "",
-      "tags": ["SQL", "Spreadsheets", "Data Analysis", "R"],
-      "year": "2024",
-      "maturityRating": "Data Analytics",
-      "issuer": "Google",
-      "credentialUrl": "https://example.com/credentials/google-data-analytics"
+      "tags": ["AWS", "Cloud Computing", "Cloud Foundations"],
+      "year": "2026",
+      "maturityRating": "Cloud",
+      "issuer": "AWS Academy"
     },
     {
       "id": "achievement-3",
-      "title": "Microsoft Certified: Azure AI Fundamentals",
-      "description": "Covers AI workloads, machine learning concepts, and Azure services for AI, including compute, model training, and responsible AI principles.",
-      "thumbnail": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=400&h=600&fit=crop",
+      "title": "Machine Learning and Artificial Intelligence",
+      "description": "Completed a machine learning and artificial intelligence program and built a multi-class sentiment analysis model achieving 86% accuracy.",
+      "thumbnail": "/images/certifications/teachnook-ml-ai.jpg",
       "previewVideo": "",
-      "tags": ["Azure", "AI", "Machine Learning"],
+      "tags": ["Machine Learning", "Artificial Intelligence", "Sentiment Analysis", "Classification"],
       "year": "2023",
       "maturityRating": "AI/ML",
-      "issuer": "Microsoft",
-      "credentialUrl": "https://example.com/credentials/azure-ai-fundamentals"
+      "issuer": "Teachnook Edutech"
     },
     {
       "id": "achievement-4",
-      "title": "Data Innovation Hackathon Winner",
-      "description": "Led a small team to build a predictive analytics solution over a 24-hour hackathon, winning first place. Designed the data pipeline and the machine learning model used for the final demo.",
-      "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=600&fit=crop",
+      "title": "Intro to SQL",
+      "description": "Completed Kaggle's introductory SQL certification, covering fundamental SQL concepts and querying relational data.",
+      "thumbnail": "/images/certifications/kaggle-intro-sql.jpg",
       "previewVideo": "",
-      "tags": ["Data Science", "Machine Learning", "Team"],
-      "year": "2025",
-      "maturityRating": "Hackathon",
-      "issuer": "University Data Hackathon",
-      "projectUrl": "https://example.com/projects/data-innovation-hackathon"
-    },
-    {
-      "id": "achievement-5",
-      "title": "Smart City Solutions Hackathon – Top 5",
-      "description": "Built an interactive dashboard analysing city transport data to surface congestion patterns. Shortlisted among the top five submissions for technical execution and clarity of insight.",
-      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop",
-      "previewVideo": "",
-      "tags": ["Python", "Dashboarding", "Data Visualisation"],
-      "year": "2024",
-      "maturityRating": "Hackathon",
-      "issuer": "CivicTech Hackathon",
-      "projectUrl": "https://example.com/projects/smart-city-dashboard"
+      "tags": ["SQL", "Relational Databases", "Data Querying"],
+      "year": "",
+      "maturityRating": "Data / SQL",
+      "issuer": "Kaggle"
     }
   ],
   "connect": [
