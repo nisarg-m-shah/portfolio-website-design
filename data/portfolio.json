@@ -187,7 +187,7 @@
     {
       "id": "connect-1",
       "title": "GitHub",
-      "description": "Check out my open source projects, contributions, and code repositories. I actively contribute to the developer community.",
+      "description": "Check out my open source projects, contributions, and code repositories. I actively contribute to the data science community.",
       "thumbnail": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=600&fit=crop",
       "icon": "github",
       "url": "https://github.com/nisarg-m-shah"
@@ -211,7 +211,7 @@
     {
       "id": "connect-4",
       "title": "X",
-      "description": "Follow me for tech insights, development tips, and occasional hot takes on the latest in web development.",
+      "description": "Follow me for tech insights, development tips, and occasional hot takes on the latest in data science.",
       "thumbnail": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=400&h=600&fit=crop",
       "icon": "twitter",
       "url": "https://x.com/nisarg522"

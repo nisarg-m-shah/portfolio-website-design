@@ -3,8 +3,9 @@ import type { Project, Skill } from "@/types/portfolio"
 export function getUniqueProjects(projects: Project[]): Project[] {
   const seen = new Set<string>()
   return projects.filter((project) => {
-    if (seen.has(project.id)) return false
-    seen.add(project.id)
+    const key = project.title.trim().toLowerCase().replace(/\s+/g, " ")
+    if (seen.has(key)) return false
+    seen.add(key)
     return true
   })
 }
