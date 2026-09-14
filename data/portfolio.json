@@ -180,7 +180,7 @@
       "description": "Check out my open source projects, contributions, and code repositories. I actively contribute to the developer community.",
       "thumbnail": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=600&fit=crop",
       "icon": "github",
-      "url": "https://github.com"
+      "url": "https://github.com/nisarg-m-shah"
     },
     {
       "id": "connect-2",
@@ -188,15 +188,15 @@
       "description": "Connect with me professionally. Let's discuss opportunities, collaborations, or just have a chat about technology.",
       "thumbnail": "https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=400&h=600&fit=crop",
       "icon": "linkedin",
-      "url": "https://linkedin.com"
+      "url": "https://www.linkedin.com/in/nisarg-m-shah/"
     },
     {
       "id": "connect-3",
-      "title": "Twitter / X",
+      "title": "X",
       "description": "Follow me for tech insights, development tips, and occasional hot takes on the latest in web development.",
       "thumbnail": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=400&h=600&fit=crop",
       "icon": "twitter",
-      "url": "https://twitter.com"
+      "url": "https://x.com/nisarg522"
     },
     {
       "id": "connect-4",
@@ -204,7 +204,7 @@
       "description": "Want to work together or have a question? Drop me an email and I'll get back to you as soon as possible.",
       "thumbnail": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=600&fit=crop",
       "icon": "mail",
-      "url": "mailto:hello@nisarg.dev"
+      "url": "mailto:nisargs018@gmail.com"
     }
   ]
 }
