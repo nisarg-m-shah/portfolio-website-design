@@ -149,7 +149,7 @@
       "id": "achievement-4",
       "title": "Intro to Machine Learning",
       "description": "Completed Kaggle's introductory SQL certification, covering fundamental SQL concepts and querying relational data.",
-      "thumbnail": "/images/certifications/kaggle-intro-sql.jpg",
+      "thumbnail": "/images/certifications/kaggle-intro-sql.png",
       "previewVideo": "",
       "tags": ["SQL", "Relational Databases", "Data Querying"],
       "year": "",
