@@ -31,7 +31,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
   }
 
   return (
-    <section className="relative h-[75vh] min-h-[480px] w-full overflow-hidden md:h-[85vh] md:min-h-[600px]">
+    <section className="relative h-[70vh] min-h-[460px] w-full overflow-hidden md:h-[85vh] md:min-h-[600px]">
       {/* Video Background */}
       <div className="absolute inset-0">
         <video
@@ -56,41 +56,43 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col justify-center px-4 md:px-12 lg:px-16">
-        <div className="max-w-2xl space-y-4">
+      <div className="relative z-10 flex h-full flex-col justify-center px-5 md:px-12 lg:px-16">
+        <div className="max-w-2xl space-y-3 md:space-y-4">
           {/* Title */}
           <h1 className="text-5xl font-bold tracking-tight md:text-7xl lg:text-8xl text-foreground">
             {profile.name}
           </h1>
 
-          {/* Metadata row */}
-          <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground md:gap-3">
-            <span className="rounded bg-muted px-2 py-0.5 text-xs font-semibold text-foreground">
-              {profile.maturityRating}
-            </span>
-            <span>{profile.year}</span>
-            <span className="text-muted-foreground">•</span>
+          {/* Metadata block */}
+          <div className="flex flex-col gap-1 text-sm text-muted-foreground md:flex-row md:items-center md:gap-3">
+            <div className="flex items-center gap-2 md:gap-3">
+              <span className="rounded bg-muted px-2 py-0.5 text-xs font-semibold text-foreground">
+                {profile.maturityRating}
+              </span>
+              <span>{profile.year}</span>
+            </div>
+            <span className="hidden text-muted-foreground md:inline">•</span>
             <span>{profile.duration}</span>
           </div>
 
           {/* Tagline */}
-          <div className="inline-flex w-fit items-center gap-2.5 rounded-full bg-primary py-2 pl-3.5 pr-5 shadow-lg shadow-primary/30 ring-1 ring-primary-foreground/20">
-            <Sparkles className="h-4 w-4 text-primary-foreground" />
-            <span className="text-sm font-bold uppercase tracking-[0.2em] text-primary-foreground">
+          <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary py-1 pl-2.5 pr-3.5 shadow-md shadow-primary/30 ring-1 ring-primary-foreground/20 md:gap-2.5 md:py-2 md:pl-3.5 md:pr-5 md:shadow-lg">
+            <Sparkles className="h-3.5 w-3.5 text-primary-foreground md:h-4 md:w-4" />
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-primary-foreground md:text-sm md:tracking-[0.2em]">
               {profile.tagline}
             </span>
           </div>
 
           {/* Description */}
-          <p className="max-w-2xl text-base text-secondary-foreground/80 leading-relaxed">
+          <p className="max-w-2xl text-sm text-secondary-foreground/80 leading-relaxed md:text-base">
             {profile.description}
           </p>
 
           {/* Action buttons */}
-          <div className="flex items-center gap-3 pt-4">
+          <div className="flex flex-wrap items-center gap-2 pt-2 md:gap-3 md:pt-4">
             <Button
               size="lg"
-              className="gap-2 bg-foreground text-background hover:bg-foreground/90 font-semibold px-8"
+              className="gap-2 bg-foreground text-background hover:bg-foreground/90 font-semibold px-5 md:px-8"
               onClick={onMoreInfo}
             >
               <Play className="h-5 w-5 fill-current" />
@@ -99,7 +101,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
             <Button
               size="lg"
               variant="secondary"
-              className="gap-2 bg-muted/80 hover:bg-muted text-foreground font-semibold px-6"
+              className="gap-2 bg-muted/80 hover:bg-muted text-foreground font-semibold px-4 md:px-6"
               onClick={onMoreInfo}
             >
               <Info className="h-5 w-5" />
@@ -123,7 +125,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
       </button>
 
       {/* Age rating badge */}
-      <div className="absolute bottom-16 right-4 z-20 flex items-center gap-2 border-l-2 border-muted-foreground/50 bg-muted/50 px-3 py-1 md:bottom-32 md:right-24">
+      <div className="absolute bottom-16 right-4 z-20 hidden items-center gap-2 border-l-2 border-muted-foreground/50 bg-muted/50 px-3 py-1 md:bottom-32 md:right-24 md:flex">
         <span className="text-sm text-muted-foreground">{profile.maturityRating}</span>
       </div>
     </section>
