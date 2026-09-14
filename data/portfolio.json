@@ -109,6 +109,18 @@
       "duration": "2 months",
       "maturityRating": "Backend Heavy",
       "liveUrl": "https://drive.google.com/file/d/1q5uOqd5p3Fu06hYY4xN2_rtJLzx0Z2jW/view?usp=sharing"
+    },
+    {
+      "id": "project-12",
+      "title": "PAT.ai: Data Analysis Assistant",
+      "description": "Built a Streamlit-based data analysis assistant that interprets natural-language queries and maps them to predefined analytical workflows. The app automatically performs statistical analyses and generates relevant Plotly visualizations, allowing users to explore datasets without manually writing analysis code.",
+      "thumbnail": "/images/projects/pat-ai.png",
+      "previewVideo": "",
+      "tags": ["Python", "Streamlit", "Pandas", "NumPy", "Plotly", "EDA", "Statistical Analysis"],
+      "year": "2026",
+      "duration": "2 months",
+      "maturityRating": "Data Science / Analytics",
+      "liveUrl": "https://pat-ai-maf6edxnuysrl84qfmjgwt.streamlit.app"
     }
   ],
   "achievements": [
