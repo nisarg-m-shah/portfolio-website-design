@@ -114,7 +114,7 @@
   "achievements": [
     {
       "id": "achievement-1",
-      "title": "3rd Place — HSNC University Datathon",
+      "title": "3rd Place - HSNC University Datathon",
       "description": "Developed a data-driven scoring model analysing ASI 2022–23 data to optimise manufacturing strategy.",
       "thumbnail": "/images/achievements/hsnc-datathon.png",
       "previewVideo": "",
@@ -125,7 +125,7 @@
     },
     {
       "id": "achievement-2",
-      "title": "AWS Academy Graduate — Cloud Foundations",
+      "title": "AWS Academy Graduate - Cloud Foundations",
       "description": "Completed AWS Academy's Cloud Foundations program, covering foundational concepts in cloud computing and AWS.",
       "thumbnail": "/images/certifications/aws-cloud-foundations.png",
       "previewVideo": "",
