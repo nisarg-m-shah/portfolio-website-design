@@ -32,7 +32,8 @@
       "year": "2026",
       "duration": "1 month",
       "maturityRating": "AI/ML",
-      "githubUrl": "https://github.com/nisarg-m-shah/ET-2-CIA-2"
+      "githubUrl": "https://github.com/nisarg-m-shah/ET-2-CIA-2",
+      "liveUrl": "https://docs.google.com/presentation/d/1iYm6FUjm_A9e-S0af08QaTi9n_QD-JSmxQY_0WTR1vE/edit?usp=sharing"
     },
     {
       "id": "featured-3",
@@ -96,7 +97,8 @@
       "year": "2024",
       "duration": "3 months",
       "maturityRating": "AI/ML",
-      "githubUrl": "https://github.com/nisarg-m-shah/ET-2-CIA-2"
+      "githubUrl": "https://github.com/nisarg-m-shah/ET-2-CIA-2",
+      "liveUrl": "https://docs.google.com/presentation/d/1iYm6FUjm_A9e-S0af08QaTi9n_QD-JSmxQY_0WTR1vE/edit?usp=sharing"
     },
     {
       "id": "project-11",
@@ -133,7 +135,8 @@
       "tags": ["Python", "Tableau", "Data Analysis", "Scoring Models", "Manufacturing Analytics"],
       "year": "2025",
       "maturityRating": "Datathon / Data Science",
-      "issuer": "HSNC University"
+      "issuer": "HSNC University",
+      "projectUrl": "https://docs.google.com/presentation/d/1qfF_im19qackI9a69Fw3cJ4gxVA5Sg-X/"
     },
     {
       "id": "achievement-2",
