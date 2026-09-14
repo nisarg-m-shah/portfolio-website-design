@@ -79,7 +79,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
           </p>
 
           {/* Description */}
-          <p className="max-w-xl text-base text-secondary-foreground/80 leading-relaxed">
+          <p className="max-w-2xl text-base text-secondary-foreground/80 leading-relaxed">
             {profile.description}
           </p>
 
