@@ -31,7 +31,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
   }
 
   return (
-    <section className="relative h-[85vh] min-h-[600px] w-full overflow-hidden">
+    <section className="relative h-[75vh] min-h-[480px] w-full overflow-hidden md:h-[85vh] md:min-h-[600px]">
       {/* Video Background */}
       <div className="absolute inset-0">
         <video
@@ -64,7 +64,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
           </h1>
 
           {/* Metadata row */}
-          <div className="flex items-center gap-3 text-sm text-muted-foreground">
+          <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground md:gap-3">
             <span className="rounded bg-muted px-2 py-0.5 text-xs font-semibold text-foreground">
               {profile.maturityRating}
             </span>
@@ -112,7 +112,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
       {/* Mute button */}
       <button
         onClick={toggleMute}
-        className="absolute bottom-32 right-4 z-20 rounded-full border border-muted-foreground/50 p-2 text-foreground transition-colors hover:bg-muted/50 md:right-12"
+        className="absolute bottom-4 right-4 z-20 rounded-full border border-muted-foreground/50 p-2 text-foreground transition-colors hover:bg-muted/50 md:bottom-32 md:right-12"
         aria-label={isMuted ? "Unmute" : "Mute"}
       >
         {isMuted ? (
@@ -123,7 +123,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
       </button>
 
       {/* Age rating badge */}
-      <div className="absolute bottom-32 right-16 z-20 flex items-center gap-2 border-l-2 border-muted-foreground/50 bg-muted/50 px-3 py-1 md:right-24">
+      <div className="absolute bottom-16 right-4 z-20 flex items-center gap-2 border-l-2 border-muted-foreground/50 bg-muted/50 px-3 py-1 md:bottom-32 md:right-24">
         <span className="text-sm text-muted-foreground">{profile.maturityRating}</span>
       </div>
     </section>
