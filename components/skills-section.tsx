@@ -14,8 +14,14 @@ export function SkillsSection({
   projects,
   onSkillClick,
 }: SkillsSectionProps) {
+  const displayedSkills = skills
+    .map((skill) => ({ skill, count: getProjectsForSkill(skill.name, projects).length }))
+    .filter(({ count }) => count > 0)
+
+  if (displayedSkills.length === 0) return null
+
   const categories = Array.from(
-    new Set(skills.map((skill) => skill.category))
+    new Set(displayedSkills.map(({ skill }) => skill.category))
   )
 
   return (
@@ -31,27 +37,22 @@ export function SkillsSection({
               {category}
             </h3>
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-              {skills
-                .filter((skill) => skill.category === category)
-                .map((skill) => {
-                  const count = getProjectsForSkill(skill.name, projects).length
-                  return (
-                    <button
-                      key={skill.id}
-                      onClick={() => onSkillClick(skill)}
-                      className="group flex cursor-pointer flex-col items-start gap-1 rounded-lg border border-border bg-card p-3 text-left transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 focus-visible:border-primary/50 focus-visible:outline-none"
-                    >
-                      <span className="w-full truncate text-sm font-semibold text-foreground">
-                        {skill.name}
-                      </span>
-                      <span className="text-xs text-muted-foreground">
-                        {count > 0
-                          ? `${count} ${count === 1 ? "project" : "projects"}`
-                          : "No projects yet"}
-                      </span>
-                    </button>
-                  )
-                })}
+              {displayedSkills
+                .filter(({ skill }) => skill.category === category)
+                .map(({ skill, count }) => (
+                  <button
+                    key={skill.id}
+                    onClick={() => onSkillClick(skill)}
+                    className="group flex cursor-pointer flex-col items-start gap-1 rounded-lg border border-border bg-card p-3 text-left transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 focus-visible:border-primary/50 focus-visible:outline-none"
+                  >
+                    <span className="w-full truncate text-sm font-semibold text-foreground">
+                      {skill.name}
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      {count} {count === 1 ? "project" : "projects"}
+                    </span>
+                  </button>
+                ))}
             </div>
           </div>
         ))}
