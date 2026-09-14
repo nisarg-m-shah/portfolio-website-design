@@ -116,8 +116,8 @@ export function ProjectModal({ item, isOpen, onClose, skills, onSkillClick }: Pr
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
 
-          {/* Title overlay */}
-          <div className="absolute bottom-0 left-0 right-0 p-6">
+          {/* Desktop title overlay */}
+          <div className="absolute bottom-0 left-0 right-0 hidden p-6 md:block">
             <h2 className="text-3xl font-bold text-foreground md:text-4xl">
               {item.title}
             </h2>
@@ -126,6 +126,11 @@ export function ProjectModal({ item, isOpen, onClose, skills, onSkillClick }: Pr
 
         {/* Content */}
         <div className="p-6">
+          {/* Mobile title (separate area below the artwork) */}
+          <h2 className="mb-5 text-2xl font-bold leading-snug text-foreground md:hidden">
+            {item.title}
+          </h2>
+
           {/* Action buttons */}
           <div className="mb-6 flex flex-wrap items-center gap-3">
             {isProject(item) && item.liveUrl && (
