@@ -38,13 +38,13 @@
     {
       "id": "featured-3",
       "title": "Debunking the Left-Right Batting Advantage",
-      "description": "A detailed analysis of the left-right batting advantage in test cricket.",
+      "description": "Contributed to an independent-study analysis investigating whether left-right batting partnerships are inherently more effective than same-handed combinations in international Test cricket. The study processed ball-by-ball data from 750+ Test matches (2002–2022) covering over 1.5 million deliveries, reconstructing partnerships by iterating deliveries and accumulating runs until a dismissal before tagging each pair as left-left, right-right, or left-right. Because player names differed across the two source datasets, the team combined them with a fuzzy matching algorithm that reached 96% matching accuracy. Three hypotheses were tested: partnership batting averages, total runs, and strike rates across combinations; a restricted view using only the top seven partnerships per match to reduce lower-order influence; and a strike-change analysis of runs and dismissals on the delivery immediately following a change of strike (200,000+ strike changes, 100,000+ runs, and nearly 4,000 dismissals). In every view the differences between left-right and same-handed combinations were too small to establish a meaningful advantage, so the analysis did not support the hypothesis.",
       "thumbnail": "/images/Left-Right.png",
       "previewVideo": "",
-      "tags": ["Socket.io", "WebRTC", "React", "Redis"],
+      "tags": ["Python", "Web Scraping", "Fuzzy Matching", "Statistical Analysis", "Data Visualisation", "Cricket Analytics"],
       "year": "2023",
       "duration": "3 months",
-      "maturityRating": "Statistical Analysis",
+      "maturityRating": "Data Science / Analytics",
       "liveUrl": "https://drive.google.com/file/d/1q5uOqd5p3Fu06hYY4xN2_rtJLzx0Z2jW/view?usp=sharing"
     }
   ],
@@ -103,13 +103,13 @@
     {
       "id": "project-11",
       "title": "Debunking the Left-Right Batting Advantage",
-      "description": "A detailed analysis of the left-right batting advantage in test cricket.",
+      "description": "Contributed to an independent-study analysis investigating whether left-right batting partnerships are inherently more effective than same-handed combinations in international Test cricket. The study processed ball-by-ball data from 750+ Test matches (2002–2022) covering over 1.5 million deliveries, reconstructing partnerships by iterating deliveries and accumulating runs until a dismissal before tagging each pair as left-left, right-right, or left-right. Because player names differed across the two source datasets, the team combined them with a fuzzy matching algorithm that reached 96% matching accuracy. Three hypotheses were tested: partnership batting averages, total runs, and strike rates across combinations; a restricted view using only the top seven partnerships per match to reduce lower-order influence; and a strike-change analysis of runs and dismissals on the delivery immediately following a change of strike (200,000+ strike changes, 100,000+ runs, and nearly 4,000 dismissals). In every view the differences between left-right and same-handed combinations were too small to establish a meaningful advantage, so the analysis did not support the hypothesis.",
       "thumbnail": "/images/Left-Right.png",
       "previewVideo": "",
-      "tags": ["Socket.io", "WebRTC", "React", "Redis"],
+      "tags": ["Python", "Web Scraping", "Fuzzy Matching", "Statistical Analysis", "Data Visualisation", "Cricket Analytics"],
       "year": "2023",
       "duration": "2 months",
-      "maturityRating": "Backend Heavy",
+      "maturityRating": "Data Science / Analytics",
       "liveUrl": "https://drive.google.com/file/d/1q5uOqd5p3Fu06hYY4xN2_rtJLzx0Z2jW/view?usp=sharing"
     },
     {
