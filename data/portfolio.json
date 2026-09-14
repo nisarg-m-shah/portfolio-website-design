@@ -11,32 +11,6 @@
   },
   "featuredProjects": [
     {
-      "id": "featured-1",
-      "title": "Navicore",
-      "description": "Multimodal GPS style navigation system for Mumbai's transport network",
-      "thumbnail": "/images/Navicore.png",
-      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "tags": ["Next.js", "AI/ML", "TypeScript", "D3.js"],
-      "year": "2026",
-      "duration": "3 months",
-      "maturityRating": "Full Stack",
-      "liveUrl": "https://navicore.streamlit.app/",
-      "githubUrl": "https://github.com/nisarg-m-shah/Mumbai-Railway-GPS"
-    },
-    {
-      "id": "featured-2",
-      "title": "IPL Fantasy League Dashboard",
-      "description": "Dashboard that scrapes live match data and displays detailed points for each team, fantasy app style.",
-      "thumbnail": "/images/CFC-Fantasy-League.png",
-      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
-      "tags": ["React", "Node.js", "Stripe", "PostgreSQL"],
-      "year": "2026",
-      "duration": "4 months",
-      "maturityRating": "Full Stack",
-      "liveUrl": "https://cfc-fantasy-league.streamlit.app",
-      "githubUrl": "https://github.com/nisarg-m-shah/IPL-Fantasy-2026"
-    },
-    {
       "id": "featured-4",
       "title": "Uniswap V3 LP Position Profitability Prediction",
       "description": "Predicts whether a Uniswap V3 liquidity position will be profitable at the moment it is opened, providing data-driven guidance on concentrated price-range selection. Built a leakage-safe ML pipeline on 62,250 closed positions extracted from 9 on-chain data sources across the highest-volume pools, with custom feature engineering for tick ranges, fee events, and partial withdrawal handling. Logistic Regression and XGBoost were evaluated with chronological train/test splitting to prevent temporal leakage, and SHAP was used to interpret predictions. A key finding was that positions whose ranges did not overlap the pool's recently traded price range were profitable only 23% of the time, compared with 60% when they did.",
@@ -231,22 +205,6 @@
       "thumbnail": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=600&fit=crop",
       "icon": "mail",
       "url": "mailto:hello@nisarg.dev"
-    },
-    {
-      "id": "connect-5",
-      "title": "YouTube",
-      "description": "Watch tutorials, project walkthroughs, and coding sessions. Learning in public and sharing knowledge.",
-      "thumbnail": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&h=600&fit=crop",
-      "icon": "youtube",
-      "url": "https://youtube.com"
-    },
-    {
-      "id": "connect-6",
-      "title": "Discord",
-      "description": "Join my community server for discussions, code reviews, and hanging out with fellow developers.",
-      "thumbnail": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=400&h=600&fit=crop",
-      "icon": "discord",
-      "url": "https://discord.gg"
     }
   ]
 }
