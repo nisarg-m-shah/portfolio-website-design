@@ -1,13 +1,13 @@
 {
   "profile": {
     "name": "Nisarg Shah",
-    "tagline": "Full Stack Developer",
-    "description": "Crafting digital experiences that push the boundaries of web technology. Building the future, one line of code at a time.",
+    "tagline": "Data Scientist",
+    "description": "Building data-driven solutions through statistical analysis, machine learning, and large-scale data processing, with a curiosity for cloud, MLOps, and AI engineering.",
     "heroVideo": "/images/Portfolio-Page.mp4",
     "heroImage": "/images/hero-bg.jpg",
-    "maturityRating": "Data Scientist",
+    "maturityRating": "Data Science · ML · Analytics",
     "year": "2026",
-    "duration": "1+ Years Experience"
+    "duration": "MSc Big Data Analytics"
   },
   "featuredProjects": [
     {
