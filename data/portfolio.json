@@ -75,6 +75,32 @@
   ],
   "allProjects": [
     {
+      "id": "project-9",
+      "title": "Navicore",
+      "description": "Multimodal GPS style navigation system for Mumbai's transport network",
+      "thumbnail": "/images/Navicore.png",
+      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "tags": ["Next.js", "AI/ML", "TypeScript", "D3.js"],
+      "year": "2026",
+      "duration": "3 months",
+      "maturityRating": "Full Stack",
+      "liveUrl": "https://navicore.streamlit.app/",
+      "githubUrl": "https://github.com/nisarg-m-shah/Mumbai-Railway-GPS"
+    },
+    {
+      "id": "project-10",
+      "title": "IPL Fantasy League Dashboard",
+      "description": "Dashboard that scrapes live match data and displays detailed points for each team, fantasy app style.",
+      "thumbnail": "/images/CFC-Fantasy-League.png",
+      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
+      "tags": ["React", "Node.js", "Stripe", "PostgreSQL"],
+      "year": "2026",
+      "duration": "4 months",
+      "maturityRating": "Full Stack",
+      "liveUrl": "https://cfc-fantasy-league.streamlit.app",
+      "githubUrl": "https://github.com/nisarg-m-shah/IPL-Fantasy-2026"
+    },
+    {
       "id": "project-7",
       "title": "Uniswap V3 LP Position Profitability Prediction",
       "description": "Predicts whether a Uniswap V3 liquidity position will be profitable at the moment it is opened, providing data-driven guidance on concentrated price-range selection. Built a leakage-safe ML pipeline on 62,250 closed positions extracted from 9 on-chain data sources across the highest-volume pools, with custom feature engineering for tick ranges, fee events, and partial withdrawal handling. Logistic Regression and XGBoost were evaluated with chronological train/test splitting to prevent temporal leakage, and SHAP was used to interpret predictions. A key finding was that positions whose ranges did not overlap the pool's recently traded price range were profitable only 23% of the time, compared with 60% when they did.",
@@ -99,82 +125,16 @@
       "githubUrl": "https://github.com/nisarg-m-shah/ET-2-CIA-2"
     },
     {
-      "id": "project-1",
-      "title": "Portfolio CMS",
-      "description": "A content management system specifically designed for developer portfolios. Features drag-and-drop editing, markdown support, and automatic SEO optimization.",
-      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=600&fit=crop",
-      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
-      "tags": ["Next.js", "Prisma", "tRPC"],
-      "year": "2023",
-      "duration": "6 weeks",
-      "maturityRating": "Full Stack",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
-    },
-    {
-      "id": "project-2",
-      "title": "Weather App",
-      "description": "Beautiful weather application with animated backgrounds, 7-day forecasts, and location-based services. Includes air quality index and UV tracking.",
-      "thumbnail": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=600&fit=crop",
+      "id": "project-11",
+      "title": "Debunking the Left-Right Batting Advantage",
+      "description": "A detailed analysis of the left-right batting advantage in test cricket.",
+      "thumbnail": "/images/Left-Right.png",
       "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "tags": ["React Native", "Weather API", "Animations"],
-      "year": "2023",
-      "duration": "3 weeks",
-      "maturityRating": "Frontend",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
-    },
-    {
-      "id": "project-3",
-      "title": "Task Manager",
-      "description": "Kanban-style task management tool with team collaboration, time tracking, and automated workflows. Integrates with popular tools like Slack and GitHub.",
-      "thumbnail": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=600&fit=crop",
-      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
-      "tags": ["Vue.js", "Firebase", "Vuex"],
+      "tags": ["Socket.io", "WebRTC", "React", "Redis"],
       "year": "2023",
       "duration": "2 months",
-      "maturityRating": "Full Stack",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
-    },
-    {
-      "id": "project-4",
-      "title": "Fitness Tracker",
-      "description": "Comprehensive fitness tracking application with workout plans, nutrition logging, progress analytics, and social features for workout buddies.",
-      "thumbnail": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=600&fit=crop",
-      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "tags": ["React", "Node.js", "MongoDB"],
-      "year": "2022",
-      "duration": "3 months",
-      "maturityRating": "Full Stack",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
-    },
-    {
-      "id": "project-5",
-      "title": "Music Visualizer",
-      "description": "Audio reactive visual experience using Web Audio API and Three.js. Creates stunning 3D visualizations that respond to music in real-time.",
-      "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=600&fit=crop",
-      "previewVideo": "https://www.w3schools.com/html/movie.mp4",
-      "tags": ["Three.js", "Web Audio", "GLSL"],
-      "year": "2022",
-      "duration": "1 month",
-      "maturityRating": "Creative",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
-    },
-    {
-      "id": "project-6",
-      "title": "Recipe Finder",
-      "description": "AI-powered recipe discovery app with ingredient recognition, meal planning, and shopping list generation. Uses image recognition for ingredient scanning.",
-      "thumbnail": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400&h=600&fit=crop",
-      "previewVideo": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "tags": ["Python", "TensorFlow", "FastAPI"],
-      "year": "2022",
-      "duration": "2 months",
-      "maturityRating": "AI/ML",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com"
+      "maturityRating": "Backend Heavy",
+      "liveUrl": "https://drive.google.com/file/d/1q5uOqd5p3Fu06hYY4xN2_rtJLzx0Z2jW/view?usp=sharing"
     }
   ],
   "blogs": [
