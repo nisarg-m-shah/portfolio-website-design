@@ -56,7 +56,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col justify-center px-5 md:px-12 lg:px-16">
+      <div className="relative z-10 flex h-full flex-col justify-center px-5 pb-8 md:px-12 md:pb-0 lg:px-16">
         <div className="max-w-2xl space-y-3 md:space-y-4">
           {/* Title */}
           <h1 className="text-5xl font-bold tracking-tight md:text-7xl lg:text-8xl text-foreground">
@@ -76,7 +76,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
           </div>
 
           {/* Tagline */}
-          <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary py-1 pl-2.5 pr-3.5 shadow-md shadow-primary/30 ring-1 ring-primary-foreground/20 md:gap-2.5 md:py-2 md:pl-3.5 md:pr-5 md:shadow-lg">
+          <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary py-1 pl-2.5 pr-3.5 shadow-sm shadow-primary/15 ring-1 ring-primary-foreground/10 md:gap-2.5 md:py-2 md:pl-3.5 md:pr-5 md:shadow-lg md:shadow-primary/30 md:ring-primary-foreground/20">
             <Sparkles className="h-3.5 w-3.5 text-primary-foreground md:h-4 md:w-4" />
             <span className="text-xs font-bold uppercase tracking-[0.16em] text-primary-foreground md:text-sm md:tracking-[0.2em]">
               {profile.tagline}
@@ -114,13 +114,13 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
       {/* Mute button */}
       <button
         onClick={toggleMute}
-        className="absolute bottom-4 right-4 z-20 rounded-full border border-muted-foreground/50 p-2 text-foreground transition-colors hover:bg-muted/50 md:bottom-32 md:right-12"
+        className="absolute bottom-28 right-4 z-20 rounded-full border border-muted-foreground/50 p-1.5 text-foreground transition-colors hover:bg-muted/50 md:bottom-32 md:right-12 md:p-2"
         aria-label={isMuted ? "Unmute" : "Mute"}
       >
         {isMuted ? (
-          <VolumeX className="h-5 w-5" />
+          <VolumeX className="h-4 w-4 md:h-5 md:w-5" />
         ) : (
-          <Volume2 className="h-5 w-5" />
+          <Volume2 className="h-4 w-4 md:h-5 md:w-5" />
         )}
       </button>
 
