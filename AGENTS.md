@@ -105,6 +105,11 @@ interface ConnectItem {
 
 ## Rules for Adding Projects
 
+0. **New projects default to featured**: Any project the user mentions goes into
+   `featuredProjects` by default, unless the user explicitly says otherwise.
+   (This generally also means listing it in `allProjects` — confirm intended
+   placement when the user does not state it.)
+
 1. **Only edit `data/portfolio.json` and `types/portfolio.ts`** (if adding new fields).
    Never hardcode project content in components.
 
