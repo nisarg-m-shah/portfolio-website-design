@@ -2,13 +2,13 @@
 
 import { useRef, useEffect, useState } from "react"
 import Image from "next/image"
-import { X, Play, ExternalLink, Github, Plus, ThumbsUp, ChevronDown, ChevronRight } from "lucide-react"
+import { X, Play, ExternalLink, Github, Plus, ThumbsUp, ChevronDown, ChevronRight, BadgeCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
-import { Project, Blog, ConnectItem } from "@/types/portfolio"
+import { Project, Achievement, ConnectItem } from "@/types/portfolio"
 
-type ModalItem = Project | Blog | ConnectItem
+type ModalItem = Project | Achievement | ConnectItem
 
 interface ProjectModalProps {
   item: ModalItem | null
@@ -20,8 +20,8 @@ function isProject(item: ModalItem): item is Project {
   return 'githubUrl' in item || ('previewVideo' in item && 'maturityRating' in item && 'liveUrl' in item)
 }
 
-function isBlog(item: ModalItem): item is Blog {
-  return 'url' in item && 'previewVideo' in item && 'maturityRating' in item && !('liveUrl' in item)
+function isAchievement(item: ModalItem): item is Achievement {
+  return 'issuer' in item
 }
 
 function isConnectItem(item: ModalItem): item is ConnectItem {
@@ -150,15 +150,23 @@ export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
                 </a>
               </Button>
             )}
-            {isBlog(item) && item.url && (
+            {isAchievement(item) && (item.credentialUrl || item.projectUrl) && (
               <Button
                 size="lg"
                 className="gap-2 bg-foreground text-background hover:bg-foreground/90"
                 asChild
               >
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="h-5 w-5" />
-                  Read Article
+                <a
+                  href={item.credentialUrl || item.projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.credentialUrl ? (
+                    <BadgeCheck className="h-5 w-5" />
+                  ) : (
+                    <ExternalLink className="h-5 w-5" />
+                  )}
+                  {item.credentialUrl ? "View Credential" : "View Project"}
                 </a>
               </Button>
             )}
@@ -183,7 +191,7 @@ export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
           </div>
 
           {/* Metadata */}
-          {'year' in item && 'duration' in item && 'maturityRating' in item && (
+          {isProject(item) && (
             <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
               <span className="text-green-500 font-semibold">New</span>
               <span className="text-muted-foreground">{item.year}</span>
@@ -191,6 +199,16 @@ export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
                 {item.maturityRating}
               </span>
               <span className="text-muted-foreground">{item.duration}</span>
+            </div>
+          )}
+          {isAchievement(item) && (
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
+              <span className="text-green-500 font-semibold">New</span>
+              <span className="text-muted-foreground">{item.year}</span>
+              <span className="rounded border border-muted-foreground/50 px-1.5 py-0.5 text-xs text-muted-foreground">
+                {item.maturityRating}
+              </span>
+              <span className="text-muted-foreground">{item.issuer}</span>
             </div>
           )}
 
@@ -231,7 +249,13 @@ export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
               <div>
                 <span className="text-muted-foreground">Type:</span>{" "}
                 <span className="text-foreground">
-                  {isProject(item) ? "Project" : isBlog(item) ? "Blog Post" : "Social Link"}
+                  {isProject(item)
+                    ? "Project"
+                    : isAchievement(item)
+                    ? item.credentialUrl
+                      ? "Certificate"
+                      : "Achievement"
+                    : "Social Link"}
                 </span>
               </div>
               {'year' in item && (
@@ -242,7 +266,9 @@ export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
               )}
               {hasTags && (
                 <div className="md:col-span-2">
-                  <span className="text-muted-foreground">Technologies:</span>{" "}
+                  <span className="text-muted-foreground">
+                    {isAchievement(item) ? "Skills:" : "Technologies:"}
+                  </span>{" "}
                   <span className="text-foreground">{item.tags.join(", ")}</span>
                 </div>
               )}

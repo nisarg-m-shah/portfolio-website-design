@@ -23,7 +23,7 @@ portfolio-website-design/
 ├── data/
 │   └── portfolio.json        ← SINGLE SOURCE OF TRUTH for all content
 ├── types/
-│   └── portfolio.ts          ← TypeScript interfaces (Profile, Project, Blog, ConnectItem, PortfolioData)
+│   └── portfolio.ts          ← TypeScript interfaces (Profile, Project, Achievement, ConnectItem, PortfolioData)
 ├── lib/
 │   └── utils.ts              ← cn() class merge helper
 ├── hooks/
@@ -61,22 +61,26 @@ interface Project {
 }
 ```
 
-### Blog Interface
+### Achievement Interface
 
 ```ts
-interface Blog {
+interface Achievement {
   id: string
   title: string
   description: string
   thumbnail: string
-  previewVideo: string  // Usually empty for blogs
-  tags: string[]
+  previewVideo: string  // Usually empty for achievements
+  tags: string[]        // Skills covered
   year: string
-  duration: string      // e.g. "8 min read"
-  maturityRating: string
-  url: string           // Link to the blog post (required, not optional)
+  maturityRating: string // Category label: "Cloud", "Hackathon", "AI/ML", etc.
+  issuer: string         // Who issued the credential / organised the event
+  credentialUrl?: string // Verification link → renders "View Credential" button
+  projectUrl?: string    // Link to the project behind the achievement → renders "View Project" button
 }
 ```
+
+Certificates use `credentialUrl`; hackathons/awards typically use `projectUrl`.
+The modal shows "View Credential" or "View Project" depending on which is set.
 
 ### ConnectItem Interface
 
@@ -98,7 +102,7 @@ interface ConnectItem {
   "profile": { ... },
   "featuredProjects": [ ... ],
   "allProjects": [ ... ],
-  "blogs": [ ... ],
+  "achievements": [ ... ],
   "connect": [ ... ]
 }
 ```
@@ -156,7 +160,7 @@ interface ConnectItem {
   It accepts any array of items with `id`, `title`, `thumbnail`, and optional
   `previewVideo`. Preserve this generic pattern — do not create specialized row
   components that duplicate its logic.
-- **Modal type guards**: `ProjectModal` uses `isProject()`, `isBlog()`, `isConnectItem()`
+- **Modal type guards**: `ProjectModal` uses `isProject()`, `isAchievement()`, `isConnectItem()`
   to decide which action buttons to render. If adding a new item type or new fields,
   update these guards accordingly.
 - **File naming**: kebab-case for all component files (e.g., `hero-section.tsx`).

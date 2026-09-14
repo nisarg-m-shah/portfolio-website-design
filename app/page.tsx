@@ -8,9 +8,9 @@ import { ConnectRow } from "@/components/connect-row"
 import { ProjectModal } from "@/components/project-modal"
 import { Footer } from "@/components/footer"
 import portfolioData from "@/data/portfolio.json"
-import { PortfolioData, Project, Blog, ConnectItem } from "@/types/portfolio"
+import { PortfolioData, Project, Achievement, ConnectItem } from "@/types/portfolio"
 
-type ModalItem = Project | Blog | ConnectItem
+type ModalItem = Project | Achievement | ConnectItem
 
 export default function HomePage() {
   const data = portfolioData as PortfolioData
@@ -58,11 +58,11 @@ export default function HomePage() {
           />
         </section>
 
-        {/* Blogs */}
-        <section id="blogs">
+        {/* Achievements & Certifications */}
+        <section id="achievements">
           <ContentRow
-            title="Blogs"
-            items={data.blogs}
+            title="Achievements & Certifications"
+            items={data.achievements}
             onItemClick={handleItemClick}
           />
         </section>

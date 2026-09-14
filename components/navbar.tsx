@@ -46,10 +46,10 @@ export function Navbar() {
               Projects
             </Link>
             <Link
-              href="#blogs"
+              href="#achievements"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
-              Blog
+              Achievements
             </Link>
             <Link
               href="#connect"

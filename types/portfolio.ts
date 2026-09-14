@@ -23,7 +23,7 @@ export interface Project {
   githubUrl?: string
 }
 
-export interface Blog {
+export interface Achievement {
   id: string
   title: string
   description: string
@@ -31,9 +31,10 @@ export interface Blog {
   previewVideo: string
   tags: string[]
   year: string
-  duration: string
   maturityRating: string
-  url: string
+  issuer: string
+  credentialUrl?: string
+  projectUrl?: string
 }
 
 export interface ConnectItem {
@@ -49,6 +50,6 @@ export interface PortfolioData {
   profile: Profile
   featuredProjects: Project[]
   allProjects: Project[]
-  blogs: Blog[]
+  achievements: Achievement[]
   connect: ConnectItem[]
 }
