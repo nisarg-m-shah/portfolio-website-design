@@ -52,6 +52,12 @@ export function Navbar() {
               Achievements
             </Link>
             <Link
+              href="#skills"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Skills
+            </Link>
+            <Link
               href="#connect"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >

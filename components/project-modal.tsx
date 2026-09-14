@@ -6,7 +6,8 @@ import { X, Play, ExternalLink, Github, Plus, ThumbsUp, ChevronDown, ChevronRigh
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
-import { Project, Achievement, ConnectItem } from "@/types/portfolio"
+import { Project, Achievement, ConnectItem, Skill } from "@/types/portfolio"
+import { isSkillTag } from "@/lib/skills"
 
 type ModalItem = Project | Achievement | ConnectItem
 
@@ -14,6 +15,8 @@ interface ProjectModalProps {
   item: ModalItem | null
   isOpen: boolean
   onClose: () => void
+  skills: Skill[]
+  onSkillClick: (skillName: string) => void
 }
 
 function isProject(item: ModalItem): item is Project {
@@ -28,7 +31,7 @@ function isConnectItem(item: ModalItem): item is ConnectItem {
   return 'icon' in item && !('previewVideo' in item)
 }
 
-export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
+export function ProjectModal({ item, isOpen, onClose, skills, onSkillClick }: ProjectModalProps) {
   const modalRef = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
@@ -227,15 +230,30 @@ export function ProjectModal({ item, isOpen, onClose }: ProjectModalProps) {
           {/* Tags */}
           {hasTags && (
             <div className="flex flex-wrap gap-2">
-              {item.tags.map((tag: string) => (
-                <Badge
-                  key={tag}
-                  variant="secondary"
-                  className="bg-muted text-muted-foreground"
-                >
-                  {tag}
-                </Badge>
-              ))}
+              {item.tags.map((tag: string) => {
+                const matchesSkill = isSkillTag(tag, skills)
+                return (
+                  <Badge
+                    key={tag}
+                    variant="secondary"
+                    className="bg-muted text-muted-foreground"
+                    asChild={matchesSkill}
+                  >
+                    {matchesSkill ? (
+                      <button
+                        type="button"
+                        onClick={() => onSkillClick(tag)}
+                        title={`View projects using ${tag}`}
+                        className="cursor-pointer transition-colors hover:ring-1 hover:ring-primary/60 hover:text-foreground focus-visible:ring-1 focus-visible:ring-primary/60 focus-visible:outline-none"
+                      >
+                        {tag}
+                      </button>
+                    ) : (
+                      <>{tag}</>
+                    )}
+                  </Badge>
+                )
+              })}
             </div>
           )}
 

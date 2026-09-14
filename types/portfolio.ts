@@ -37,6 +37,12 @@ export interface Achievement {
   projectUrl?: string
 }
 
+export interface Skill {
+  id: string
+  name: string
+  category: string
+}
+
 export interface ConnectItem {
   id: string
   title: string
@@ -51,5 +57,6 @@ export interface PortfolioData {
   featuredProjects: Project[]
   allProjects: Project[]
   achievements: Achievement[]
+  skills: Skill[]
   connect: ConnectItem[]
 }

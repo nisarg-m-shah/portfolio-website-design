@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="border-t border-border bg-background px-4 py-8 md:px-12 lg:px-16">
       <div className="mx-auto max-w-6xl">
         {/* Links grid */}
-        <div className="grid grid-cols-2 gap-x-6 gap-y-5 md:mb-8 md:grid-cols-4 md:gap-8">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-5 md:mb-8 md:grid-cols-3 md:gap-8">
           <div>
             <h3 className="mb-2 text-sm font-semibold text-foreground md:mb-4">Navigate</h3>
             <ul className="space-y-1 md:space-y-2">
@@ -26,17 +26,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="#skills" className="text-sm text-muted-foreground hover:text-foreground">
+                  Skills
+                </Link>
+              </li>
+              <li>
                 <Link href="#connect" className="text-sm text-muted-foreground hover:text-foreground">
                   Connect
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
-            <h3 className="mb-2 text-sm font-semibold text-foreground md:mb-4">Tech Stack</h3>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              Python · SQL · Pandas · NumPy · Scikit-Learn · Apache Spark · AWS · Docker · Git
-            </p>
           </div>
           <div>
             <h3 className="mb-2 text-sm font-semibold text-foreground md:mb-4">Connect</h3>

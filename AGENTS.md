@@ -17,15 +17,18 @@ portfolio-website-design/
 │   ├── content-row.tsx       ← Horizontal scroll row (Netflix-style cards, generic)
 │   ├── connect-row.tsx       ← Same scroll layout for social links with icons
 │   ├── project-modal.tsx     ← Modal overlay for project/blog/connect details
+│   ├── skills-section.tsx    ← Skills grid grouped by category; cards open skill modal
+│   ├── skills-modal.tsx      ← Modal listing projects mapped to a skill
 │   ├── footer.tsx            ← Site footer
 │   ├── theme-provider.tsx
 │   └── ui/                   ← 56 shadcn/ui primitive components (do not modify)
 ├── data/
 │   └── portfolio.json        ← SINGLE SOURCE OF TRUTH for all content
 ├── types/
-│   └── portfolio.ts          ← TypeScript interfaces (Profile, Project, Achievement, ConnectItem, PortfolioData)
+│   └── portfolio.ts          ← TypeScript interfaces (Profile, Project, Achievement, Skill, ConnectItem, PortfolioData)
 ├── lib/
-│   └── utils.ts              ← cn() class merge helper
+│   ├── utils.ts              ← cn() class merge helper
+│   └── skills.ts             ← Skill↔project mapping helpers (case-insensitive tag matching, dedupe by id)
 ├── hooks/
 │   ├── use-mobile.ts
 │   └── use-toast.ts
@@ -95,6 +98,23 @@ interface ConnectItem {
 }
 ```
 
+### Skill Interface
+
+```ts
+interface Skill {
+  id: string
+  name: string
+  category: string   // Group label: "Languages", "ML / Data", "Cloud & Tools", "Other"
+}
+```
+
+Skills render as clickable cards in `skills-section.tsx`. Skill→project mapping is
+derived from `Project.tags` (case-insensitive match via `lib/skills.ts`), never
+stored as its own field. Project tags matching a skill become clickable in
+`project-modal.tsx` and open the corresponding skill modal. Only add a skill or a
+skill-name tag when the user asserts the mapping; unverified skills simply show no
+projects until a matching tag exists.
+
 ### Portfolio Data Structure
 
 ```json
@@ -103,6 +123,7 @@ interface ConnectItem {
   "featuredProjects": [ ... ],
   "allProjects": [ ... ],
   "achievements": [ ... ],
+  "skills": [ ... ],
   "connect": [ ... ]
 }
 ```
