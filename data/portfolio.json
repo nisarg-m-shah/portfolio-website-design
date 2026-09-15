@@ -65,7 +65,7 @@
     {
       "id": "project-10",
       "title": "IPL Fantasy League Dashboard",
-      "description": "Automates the boring part of a fantasy cricket league: it scrapes live match data as games unfold, converts every player's performance into fantasy points using a role-based scoring rulebook, and streams a live leaderboard to a Streamlit dashboard. Team standings refresh automatically as each match progresses — no manual point tallying, no spreadsheets. (Squad drafting is handled by a separate external auction.)",
+      "description": "Automates the boring part of a fantasy cricket league: it scrapes live match data as games unfold, converts every player's performance into fantasy points using a role-based scoring rulebook, and streams a live leaderboard to a Streamlit dashboard. Team standings refresh automatically as each match progresses — no manual point tallying, no spreadsheets.",
       "thumbnail": "/images/CFC-Fantasy-League.png",
       "previewVideo": "",
       "tags": [ "Python", "Streamlit", "BeautifulSoup", "Requests", "Data Visualisation"],
