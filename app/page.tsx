@@ -77,7 +77,7 @@ export default function HomePage() {
       {/* Content Rows */}
       <div className="-mt-20 relative z-10 space-y-2 pb-12">
         {/* Featured Projects */}
-        <section id="featured">
+        <section id="featured" className="scroll-mt-20">
           <ContentRow
             title="Featured Projects"
             items={data.featuredProjects}
@@ -86,7 +86,7 @@ export default function HomePage() {
         </section>
 
         {/* All Projects */}
-        <section id="projects">
+        <section id="projects" className="scroll-mt-20">
           <ContentRow
             title="All Projects"
             items={data.allProjects}
@@ -95,7 +95,7 @@ export default function HomePage() {
         </section>
 
         {/* Achievements & Certifications */}
-        <section id="achievements">
+        <section id="achievements" className="scroll-mt-20">
           <ContentRow
             title="Achievements & Certifications"
             items={data.achievements}
@@ -104,7 +104,7 @@ export default function HomePage() {
         </section>
 
         {/* Skills */}
-        <section id="skills">
+        <section id="skills" className="scroll-mt-20">
           <SkillsSection
             skills={data.skills}
             projects={allProjects}
@@ -113,7 +113,7 @@ export default function HomePage() {
         </section>
 
         {/* Connect with Me */}
-        <section id="connect">
+        <section id="connect" className="scroll-mt-20">
           <ConnectRow
             title="Connect with Me"
             items={data.connect}
