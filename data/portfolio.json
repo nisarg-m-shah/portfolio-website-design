@@ -52,7 +52,7 @@
     {
       "id": "project-9",
       "title": "Navicore",
-      "description": "Multimodal GPS style navigation system for Mumbai's transport network",
+      "description": "A multimodal, GPS-style route finder for Mumbai's transport network: it models the city's suburban rail and bus networks as a single weighted graph built from stops, routes, and schedule data, then runs shortest-path search to surface the best rail + bus route between any two landmarks. Built in Python with NetworkX and shipped through an interactive web front end (Next.js, TypeScript, D3.js) with a live Streamlit deployment — so instead of guessing on the platform, you get the actual shortest path that mixes trains and buses.",
       "thumbnail": "/images/Navicore.png",
       "previewVideo": "",
       "tags": ["Graph Theory", "Python", "NetworkX", "Streamlit"],
@@ -65,7 +65,7 @@
     {
       "id": "project-10",
       "title": "IPL Fantasy League Dashboard",
-      "description": "Dashboard that scrapes live match data and displays detailed points for each team, fantasy app style.",
+      "description": "An auction-based fantasy cricket league, automated end-to-end. The app scrapes live match data as games unfold, converts every player's performance into fantasy points using a role-based scoring rulebook, and streams a live leaderboard to a Streamlit dashboard. An auction module handles squad drafting ahead of the season, and standings keep refreshing as each match progresses — the fantasy league's answer to a post-match command centre, without a manual spreadsheet in sight.",
       "thumbnail": "/images/CFC-Fantasy-League.png",
       "previewVideo": "",
       "tags": [ "Python", "Streamlit", "BeautifulSoup", "Requests", "Data Visualisation"],
@@ -115,7 +115,7 @@
     {
       "id": "project-12",
       "title": "PAT.ai: Data Analysis Assistant",
-      "description": "Built a Streamlit-based data analysis assistant that interprets natural-language queries and maps them to predefined analytical workflows. The app automatically performs statistical analyses and generates relevant Plotly visualizations, allowing users to explore datasets without manually writing analysis code.",
+      "description": "Wish you could explore a dataset without writing pandas code? PAT.ai is a Streamlit-based data analysis assistant that turns plain-English questions into real analytics. Type something like 'how does revenue vary by region?', and the app maps your query to a predefined analytical workflow, runs the statistical analysis quietly in the background, and returns a clean Plotly chart. It's a fast, conversational on-ramp to exploratory data analysis for anyone who wants answers, not syntax.",
       "thumbnail": "/images/projects/pat-ai.png",
       "previewVideo": "",
       "tags": ["Python", "Streamlit", "Pandas", "NumPy", "Plotly", "EDA", "Statistical Analysis"],
