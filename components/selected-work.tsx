@@ -11,8 +11,6 @@ interface SelectedWorkProps {
 }
 
 export function SelectedWork({ projects, basePath = "" }: SelectedWorkProps) {
-  const [featured, ...rest] = projects
-
   return (
     <section className="relative overflow-hidden border-b border-border px-4 py-20 md:px-12 md:py-28 lg:px-16">
       <span
@@ -35,50 +33,20 @@ export function SelectedWork({ projects, basePath = "" }: SelectedWorkProps) {
           </p>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-6">
-          {featured && (
-            <Link
-              href={`${basePath}#projects`}
-              className="group relative block overflow-hidden rounded bg-secondary md:col-span-3 md:row-span-2"
-            >
-              <div className="relative aspect-[2/3] w-full md:aspect-auto md:h-full">
-                <Image
-                  src={featured.thumbnail}
-                  alt={featured.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7">
-                  <div className="flex items-center gap-2">
-                    <span className="rounded bg-primary px-2 py-0.5 text-xs font-semibold text-primary-foreground">
-                      {featured.maturityRating}
-                    </span>
-                    <span className="font-mono text-xs text-muted-foreground">{featured.year}</span>
-                  </div>
-                  <h3 className="mt-3 text-xl font-bold tracking-tight md:text-3xl">
-                    {featured.title}
-                  </h3>
-                </div>
-              </div>
-            </Link>
-          )}
-
-          {rest.map((project) => (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
+          {projects.map((project) => (
             <Link
               key={project.id}
               href={`${basePath}#projects`}
-              className="group relative block overflow-hidden rounded bg-secondary md:col-span-3"
+              className="group relative block overflow-hidden rounded bg-secondary"
             >
-              <div className="relative aspect-[2/3] w-full">
+              <div className="relative aspect-[4/3] w-full">
                 <Image
                   src={project.thumbnail}
                   alt={project.title}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5">
@@ -88,7 +56,7 @@ export function SelectedWork({ projects, basePath = "" }: SelectedWorkProps) {
                     </span>
                     <span className="font-mono text-xs text-muted-foreground">{project.year}</span>
                   </div>
-                  <h3 className="mt-2 truncate text-base font-bold tracking-tight md:text-lg">
+                  <h3 className="mt-2 text-base font-bold tracking-tight md:text-lg">
                     {project.title}
                   </h3>
                 </div>

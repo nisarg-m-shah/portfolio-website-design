@@ -11,7 +11,6 @@ export function AboutHero({ profile, about }: AboutHeroProps) {
   const highlights = [
     `Currently · ${profile.duration}`,
     `Focus · ${profile.maturityRating}`,
-    `Archive · ${profile.year}`,
   ]
 
   return (
@@ -32,13 +31,10 @@ export function AboutHero({ profile, about }: AboutHeroProps) {
       <div className="relative z-10 mx-auto w-full max-w-6xl py-24 md:py-32">
         <div className="grid gap-14 md:grid-cols-12">
           <div className="space-y-7 md:col-span-8">
-            <p className="animate-in fade-in slide-in-from-bottom-3 font-mono text-xs uppercase tracking-[0.3em] text-primary duration-700 md:text-sm">
-              They don&apos;t know you yet. That&apos;s the whole point of this page.
-            </p>
-            <h1 className="animate-in fade-in slide-in-from-bottom-4 text-6xl font-bold tracking-tight duration-700 md:text-8xl lg:text-9xl">
+            <h1 className="text-6xl font-bold tracking-tight md:text-8xl lg:text-9xl">
               {profile.name}
             </h1>
-            <div className="animate-in fade-in slide-in-from-bottom-5 space-y-4 pt-2 duration-700">
+            <div className="space-y-4 pt-2">
               <div className="flex items-center gap-3 border-l-2 border-primary pl-4 pt-1">
                 <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground md:text-sm">
                   {profile.tagline}

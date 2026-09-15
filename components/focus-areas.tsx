@@ -9,11 +9,11 @@ interface FocusAreasProps {
   basePath?: string
 }
 
-const areaLayouts = [
-  "md:col-span-6 md:col-start-1",
-  "md:col-span-5 md:col-start-7",
-  "md:col-span-6 md:col-start-2 md:-mt-6",
-  "md:col-span-5 md:col-start-8 md:-mt-10",
+const areaStagger = [
+  "",
+  "md:mt-8",
+  "md:mt-4",
+  "md:mt-12",
 ]
 
 export function FocusAreas({ focusAreas, basePath = "" }: FocusAreasProps) {
@@ -39,12 +39,12 @@ export function FocusAreas({ focusAreas, basePath = "" }: FocusAreasProps) {
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-12">
+        <div className="grid gap-5 md:grid-cols-2">
           {focusAreas.map((area, index) => (
             <div
               key={area.id}
               className={`border border-border bg-card/40 p-6 transition-colors duration-300 hover:border-primary/60 md:p-8 ${
-                areaLayouts[index % areaLayouts.length]
+                areaStagger[index % areaStagger.length]
               }`}
             >
               <div className="flex items-center justify-between">
