@@ -13,7 +13,7 @@
     {
       "id": "featured-4",
       "title": "Uniswap V3 LP Position Profitability Prediction",
-      "description": "Predicts whether a Uniswap V3 liquidity position will be profitable at the moment it is opened, providing data-driven guidance on concentrated price-range selection. Built a leakage-safe ML pipeline on 62,250 closed positions extracted from 9 on-chain data sources across the highest-volume pools, with custom feature engineering for tick ranges, fee events, and partial withdrawal handling. Logistic Regression and XGBoost were evaluated with chronological train/test splitting to prevent temporal leakage, and SHAP was used to interpret predictions. A key finding was that positions whose ranges did not overlap the pool's recently traded price range were profitable only 23% of the time, compared with 60% when they did.",
+      "description": "What happens when you open a concentrated liquidity position on Uniswap V3 — will it actually make money? This model predicts exactly that at the moment of opening, giving liquidity providers data-driven guidance on where to set their price range. Trained on 62,250 closed positions pulled from 9 on-chain data sources across the highest-volume pools, with custom features for tick ranges, fee events, and partial withdrawals. Logistic Regression and XGBoost were evaluated using chronological splits to avoid temporal leakage, and SHAP revealed the headline insight: positions whose price range didn't overlap the pool's recently traded range were profitable just 23% of the time — versus 60% when they did.",
       "thumbnail": "/images/Uniswap-V3-LP-Prediction.png",
       "previewVideo": "",
       "tags": ["Python", "pandas", "XGBoost", "scikit-learn", "SHAP", "Dune Analytics"],
@@ -25,7 +25,7 @@
     {
       "id": "featured-5",
       "title": "Criteo CTR Prediction",
-      "description": "Implemented and benchmarked the same click-through-rate prediction workflow across three computing environments: a Docker-based PySpark cluster, an AWS EC2 Spark cluster, and single-machine scikit-learn. Built preprocessing pipelines for the Criteo 1M dataset handling median imputation, log transformations, feature hashing for high-cardinality categoricals, and sparse feature assembly. Trained Logistic Regression, Random Forest, and Gradient-Boosted Trees models with 2-fold cross-validation. The best model achieved a 0.537 PR-AUC against a 25.5% positive-class baseline, with benchmarks comparing execution characteristics across the single-machine and distributed setups.",
+      "description": "Same click-through-rate prediction, three very different computing setups — which one actually wins? The Criteo 1M dataset was preprocessed with median imputation, log transforms, feature hashing for high-cardinality categoricals, and sparse feature assembly, then fed into Logistic Regression, Random Forest, and Gradient-Boosted Trees models with 2-fold cross-validation. The best model hit 0.537 PR-AUC against a 25.5% positive-class baseline — but the real story was the benchmark: identical workflow run across a Docker-based PySpark cluster, an AWS EC2 Spark cluster, and single-machine scikit-learn, comparing how the same pipeline scales from laptop to cloud.",
       "thumbnail": "/images/Criteo-CTR-Prediction.png",
       "previewVideo": "",
       "tags": ["Python", "PySpark", "Apache Spark", "scikit-learn", "AWS EC2", "Docker"],
@@ -78,7 +78,7 @@
     {
       "id": "project-7",
       "title": "Uniswap V3 LP Position Profitability Prediction",
-      "description": "Predicts whether a Uniswap V3 liquidity position will be profitable at the moment it is opened, providing data-driven guidance on concentrated price-range selection. Built a leakage-safe ML pipeline on 62,250 closed positions extracted from 9 on-chain data sources across the highest-volume pools, with custom feature engineering for tick ranges, fee events, and partial withdrawal handling. Logistic Regression and XGBoost were evaluated with chronological train/test splitting to prevent temporal leakage, and SHAP was used to interpret predictions. A key finding was that positions whose ranges did not overlap the pool's recently traded price range were profitable only 23% of the time, compared with 60% when they did.",
+      "description": "What happens when you open a concentrated liquidity position on Uniswap V3 — will it actually make money? This model predicts exactly that at the moment of opening, giving liquidity providers data-driven guidance on where to set their price range. Trained on 62,250 closed positions pulled from 9 on-chain data sources across the highest-volume pools, with custom features for tick ranges, fee events, and partial withdrawals. Logistic Regression and XGBoost were evaluated using chronological splits to avoid temporal leakage, and SHAP revealed the headline insight: positions whose price range didn't overlap the pool's recently traded range were profitable just 23% of the time — versus 60% when they did.",
       "thumbnail": "/images/Uniswap-V3-LP-Prediction.png",
       "previewVideo": "",
       "tags": ["Python", "pandas", "XGBoost", "scikit-learn", "SHAP", "Dune Analytics"],
@@ -90,7 +90,7 @@
     {
       "id": "project-8",
       "title": "Criteo CTR Prediction",
-      "description": "Implemented and benchmarked the same click-through-rate prediction workflow across three computing environments: a Docker-based PySpark cluster, an AWS EC2 Spark cluster, and single-machine scikit-learn. Built preprocessing pipelines for the Criteo 1M dataset handling median imputation, log transformations, feature hashing for high-cardinality categoricals, and sparse feature assembly. Trained Logistic Regression, Random Forest, and Gradient-Boosted Trees models with 2-fold cross-validation. The best model achieved a 0.537 PR-AUC against a 25.5% positive-class baseline, with benchmarks comparing execution characteristics across the single-machine and distributed setups.",
+      "description": "Same click-through-rate prediction, three very different computing setups — which one actually wins? The Criteo 1M dataset was preprocessed with median imputation, log transforms, feature hashing for high-cardinality categoricals, and sparse feature assembly, then fed into Logistic Regression, Random Forest, and Gradient-Boosted Trees models with 2-fold cross-validation. The best model hit 0.537 PR-AUC against a 25.5% positive-class baseline — but the real story was the benchmark: identical workflow run across a Docker-based PySpark cluster, an AWS EC2 Spark cluster, and single-machine scikit-learn, comparing how the same pipeline scales from laptop to cloud.",
       "thumbnail": "/images/Criteo-CTR-Prediction.png",
       "previewVideo": "",
       "tags": ["Python", "PySpark", "Apache Spark", "scikit-learn", "AWS EC2", "Docker"],
