@@ -12,7 +12,7 @@ const iconMap: Record<string, React.ReactNode> = {
   discord: <MessageCircle className="h-5 w-5" />,
 }
 
-export function Footer() {
+export function Footer({ basePath = "" }: { basePath?: string }) {
   const data = portfolioData as PortfolioData
   const connectItems = data.connect
   return (
@@ -24,27 +24,32 @@ export function Footer() {
             <h3 className="mb-2 text-sm font-semibold text-foreground md:mb-4">Navigate</h3>
             <ul className="space-y-1 md:space-y-2">
               <li>
-                <Link href="#featured" className="text-sm text-muted-foreground hover:text-foreground">
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href={`${basePath}#featured`} className="text-sm text-muted-foreground hover:text-foreground">
                   Featured Projects
                 </Link>
               </li>
               <li>
-                <Link href="#projects" className="text-sm text-muted-foreground hover:text-foreground">
+                <Link href={`${basePath}#projects`} className="text-sm text-muted-foreground hover:text-foreground">
                   All Projects
                 </Link>
               </li>
               <li>
-                <Link href="#achievements" className="text-sm text-muted-foreground hover:text-foreground">
+                <Link href={`${basePath}#achievements`} className="text-sm text-muted-foreground hover:text-foreground">
                   Achievements
                 </Link>
               </li>
               <li>
-                <Link href="#skills" className="text-sm text-muted-foreground hover:text-foreground">
+                <Link href={`${basePath}#skills`} className="text-sm text-muted-foreground hover:text-foreground">
                   Skills
                 </Link>
               </li>
               <li>
-                <Link href="#connect" className="text-sm text-muted-foreground hover:text-foreground">
+                <Link href={`${basePath}#connect`} className="text-sm text-muted-foreground hover:text-foreground">
                   Connect
                 </Link>
               </li>

@@ -232,5 +232,152 @@
       "icon": "twitter",
       "url": "https://x.com/nisarg522"
     }
-  ]
+  ],
+  "about": {
+    "intro": "I work at the intersection of statistical analysis, machine learning, and large-scale data processing — turning messy, complex real-world problems into understandable, data-driven answers. Right now I'm pursuing an MSc in Big Data Analytics and deliberately exploring cloud, MLOps, and AI engineering as the next things I want to learn, not as things I claim to own.",
+    "journey": [
+      {
+        "id": "about-era-1",
+        "stage": "Mathematics & Computer Science",
+        "tagline": "The analytical foundation.",
+        "items": [
+          {
+            "id": "about-jour-1",
+            "label": "B.Sc. Mathematics & Computer Science",
+            "org": "Ashoka University",
+            "period": "2020 – 2024",
+            "kind": "education"
+          }
+        ]
+      },
+      {
+        "id": "about-era-2",
+        "stage": "Analytics & Growth",
+        "tagline": "Where the data started to connect to decisions.",
+        "items": [
+          {
+            "id": "about-jour-2",
+            "label": "Growth Marketing Executive",
+            "org": "Pravis Growth Partners, Gurugram",
+            "period": "Jul 2024 – Sep 2024",
+            "kind": "work"
+          }
+        ]
+      },
+      {
+        "id": "about-era-3",
+        "stage": "Big Data Analytics",
+        "tagline": "Going deeper into scale and systems.",
+        "items": [
+          {
+            "id": "about-jour-3",
+            "label": "MSc Big Data Analytics",
+            "org": "St. Xavier's College, Mumbai",
+            "period": "2025 – 2027",
+            "kind": "education"
+          },
+          {
+            "id": "about-jour-4",
+            "label": "AWS Academy — Cloud Foundations",
+            "period": "2026",
+            "kind": "achievement"
+          }
+        ]
+      },
+      {
+        "id": "about-era-4",
+        "stage": "AI / Product Work",
+        "tagline": "Applying ML to real problems and products.",
+        "items": [
+          {
+            "id": "about-jour-5",
+            "label": "Product & AI Solutions Intern",
+            "org": "Tijori.ai, Mumbai",
+            "period": "Apr 2026 – Jun 2026",
+            "kind": "work"
+          },
+          {
+            "id": "about-jour-6",
+            "label": "3rd Place — HSNC University Datathon",
+            "period": "2025",
+            "kind": "achievement"
+          }
+        ]
+      },
+      {
+        "id": "about-era-5",
+        "stage": "Data Science / ML",
+        "tagline": "Where the independent work lives today.",
+        "items": [
+          {
+            "id": "about-jour-7",
+            "label": "Machine Learning & AI — coursework and independent projects",
+            "period": "2023 onwards",
+            "kind": "projects"
+          },
+          {
+            "id": "about-jour-8",
+            "label": "Independent research — Criteo, Uniswap V3, Left-Right"
+          }
+        ]
+      }
+    ],
+    "focusAreas": [
+      {
+        "id": "focus-1",
+        "title": "Data Science",
+        "points": ["Statistical analysis", "EDA", "Hypothesis testing", "Data visualization"]
+      },
+      {
+        "id": "focus-2",
+        "title": "Machine Learning",
+        "points": ["Classification", "Regression", "Feature engineering", "Model evaluation"]
+      },
+      {
+        "id": "focus-3",
+        "title": "Big Data",
+        "points": ["Apache Spark", "PySpark", "Hadoop", "Distributed processing"]
+      },
+      {
+        "id": "focus-4",
+        "title": "Cloud & Engineering",
+        "points": ["AWS", "Docker", "Git", "Data pipelines"]
+      }
+    ],
+    "experience": [
+      {
+        "id": "about-exp-1",
+        "role": "Product & AI Solutions Intern",
+        "org": "Tijori.ai, Mumbai",
+        "kind": "work",
+        "period": "Apr 2026 – Jun 2026",
+        "highlights": [
+          "Developed a client-facing AI document-processing product supporting 15+ document types, extracting up to 20 structured fields per document, and validated it across 50+ documents.",
+          "Implemented a secure, isolated development environment on AWS EC2, enabling developers to work on proprietary code within a controlled environment without exposing source code locally.",
+          "Refined customer targeting and outreach messaging through structured competitor and persona research, developing 6 ICP segments and driving approximately a 20% improvement in response rates."
+        ]
+      },
+      {
+        "id": "about-exp-2",
+        "role": "Growth Marketing Executive",
+        "org": "Pravis Growth Partners, Gurugram",
+        "kind": "work",
+        "period": "Jul 2024 – Sep 2024",
+        "highlights": [
+          "Built a Python ETL pipeline using the YouTube API and Pandas to scrape and process Instagram and YouTube metrics, reducing manual reporting time by 10+ hours/month.",
+          "Maintained an automated Share-of-Voice analytics pipeline for Johnson & Johnson using keyword-level competitive data for monthly brand benchmarking.",
+          "Drove 300% growth in social media engagement through targeted paid campaigns while managing approximately ₹20K in monthly ad spend."
+        ]
+      },
+      {
+        "id": "about-exp-3",
+        "role": "Independent research & coursework",
+        "org": "MSc Big Data Analytics",
+        "kind": "study",
+        "summary": "Leakage-safe ML pipelines, distributed-processing benchmarks, and statistical studies on messy real-world data."
+      }
+    ],
+    "exploring": ["Cloud Computing", "MLOps", "AI Engineering", "Large-Scale ML Systems", "Data Infrastructure", "Applied AI"],
+    "lookingFor": "I'm looking for opportunities where I can work on meaningful data problems, build production-oriented analytical systems, and keep growing toward machine learning and AI engineering."
+  }
 }

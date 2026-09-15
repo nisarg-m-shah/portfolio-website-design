@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Search, Bell, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-export function Navbar() {
+export function Navbar({ basePath = "" }: { basePath?: string }) {
   const [isScrolled, setIsScrolled] = useState(false)
 
   // Handle scroll effect
@@ -34,31 +34,37 @@ export function Navbar() {
           {/* Navigation links - desktop */}
           <div className="hidden items-center gap-5 md:flex">
             <Link
-              href="#featured"
+              href="/about"
+              className="text-sm text-foreground transition-colors hover:text-muted-foreground"
+            >
+              About
+            </Link>
+            <Link
+              href={`${basePath}#featured`}
               className="text-sm text-foreground transition-colors hover:text-muted-foreground"
             >
               Featured
             </Link>
             <Link
-              href="#projects"
+              href={`${basePath}#projects`}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               Projects
             </Link>
             <Link
-              href="#achievements"
+              href={`${basePath}#achievements`}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               Achievements
             </Link>
             <Link
-              href="#skills"
+              href={`${basePath}#skills`}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               Skills
             </Link>
             <Link
-              href="#connect"
+              href={`${basePath}#connect`}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               Connect

@@ -8,27 +8,36 @@ Tailwind CSS v4, and shadcn/ui (New York variant). It was generated via v0.app.
 ```
 portfolio-website-design/
 ├── app/
-│   ├── page.tsx              ← Single page, all sections rendered here ("use client")
+│   ├── page.tsx              ← Home page, all sections rendered here ("use client")
+│   ├── about/
+│   │   └── page.tsx          ← About page (/about), editorial single-page layout
 │   ├── layout.tsx            ← Root layout (Geist fonts, Vercel Analytics)
 │   └── globals.css           ← Dark cinematic theme (oklch colors, red accent)
 ├── components/
-│   ├── navbar.tsx            ← Fixed nav with anchor links (#featured, #projects, etc.)
-│   ├── hero-section.tsx      ← Full-viewport hero with video background
+│   ├── navbar.tsx            ← Fixed nav; basePath prop prefixes anchor links; About link
+│   ├── hero-section.tsx      ← Full-viewport hero with video background (onViewWork / onMoreInfo)
 │   ├── content-row.tsx       ← Horizontal scroll row (Netflix-style cards, generic)
 │   ├── connect-row.tsx       ← Same scroll layout for social links with icons
 │   ├── project-modal.tsx     ← Modal overlay for project/blog/connect details
 │   ├── skills-section.tsx    ← Skills grid grouped by category; cards open skill modal
 │   ├── skills-modal.tsx      ← Modal listing projects mapped to a skill
-│   ├── footer.tsx            ← Site footer
+│   ├── about-hero.tsx        ← About page intro (editorial, oversized background word)
+│   ├── focus-areas.tsx       ← About "What I Work On" asymmetric cards -> links to #skills
+│   ├── journey-timeline.tsx  ← About "My Journey" flowing vertical timeline
+│   ├── experience-section.tsx← About context rows for roles/study
+│   ├── selected-work.tsx     ← About compact project cards -> links to /#projects
+│   ├── exploring-section.tsx ← About "Currently Exploring" frontier list
+│   ├── looking-for.tsx       ← About closing statement + Let's Connect CTA -> /#connect
+│   ├── footer.tsx            ← Site footer; basePath prop for non-home pages
 │   ├── theme-provider.tsx
 │   └── ui/                   ← 56 shadcn/ui primitive components (do not modify)
 ├── data/
 │   └── portfolio.json        ← SINGLE SOURCE OF TRUTH for all content
 ├── types/
-│   └── portfolio.ts          ← TypeScript interfaces (Profile, Project, Achievement, Skill, ConnectItem, PortfolioData)
+│   └── portfolio.ts          ← TypeScript interfaces (Profile, Project, Achievement, Skill, ConnectItem, AboutData, PortfolioData)
 ├── lib/
 │   ├── utils.ts              ← cn() class merge helper
-│   └── skills.ts             ← Skill↔project mapping helpers (case-insensitive tag matching, dedupe by id)
+│   └── skills.ts             ← Skill↔project mapping helpers (case-insensitive tag matching, dedupe by title)
 ├── hooks/
 │   ├── use-mobile.ts
 │   └── use-toast.ts
@@ -124,9 +133,30 @@ projects until a matching tag exists.
   "allProjects": [ ... ],
   "achievements": [ ... ],
   "skills": [ ... ],
-  "connect": [ ... ]
+  "connect": [ ... ],
+  "about": { ... }
 }
 ```
+
+### About Data (AboutData)
+
+Lives under `about` in `portfolio.json` and feeds the `/about` editorial page.
+
+- `intro`: the opening statement under the hero name.
+- `journey`: ordered `{ stage, tagline?, items[] }` eras rendered as the flowing
+  timeline. Each item has `label`, optional `org`/`period`, and `kind` one of
+  `education | work | achievement | projects`.
+- `focusAreas`: 4 `{ title, points[] }` cards ("What I Work On") linking to `#skills`.
+- `experience`: context rows `{ role, org, kind?, period?, summary?, highlights[] }`
+  for roles/study. `highlights` renders as bullet points; `summary` as a paragraph
+  (used when there are no highlights, e.g. research context).
+- `exploring`: strings shown in the "Currently Exploring" frontier list.
+- `lookingFor`: closing statement shown with the "Let's Connect" CTA.
+
+Never invent journey/experience facts (dates, orgs, roles). Only include
+information the user has supplied. Status labels like "Education", "Work",
+"Award / Cert", "Projects" are derived from `kind`; leave `period` empty rather
+than guessing dates.
 
 ## Rules for Adding Projects
 
@@ -193,6 +223,13 @@ projects until a matching tag exists.
   (`w-[140px] md:w-[180px] lg:w-[220px]`). Preserve these responsive breakpoints.
 - **Typography**: Font is Geist (sans) and Geist Mono, loaded via `next/font/google`
   in layout.tsx.
+- **Routing / link base**: The home page renders its own sections; the `/about`
+  page reuses `Navbar` and `Footer` with `basePath="/"` so anchor links
+  (`#featured`, `#projects`, `#achievements`, `#skills`, `#connect`) resolve to the
+  home page. The hero "View Work" button scrolls to `#featured` (`onViewWork`);
+  "More Info" routes to `/about` (`onMoreInfo`). About-section anchor links point to
+  home-page sections (`/#projects`, `/#skills`, `/#connect`) rather than About
+  sections.
 
 ## Rules Against Inventing Information
 

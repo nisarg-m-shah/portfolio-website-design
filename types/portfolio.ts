@@ -52,6 +52,46 @@ export interface ConnectItem {
   url: string
 }
 
+export interface AboutFocusArea {
+  id: string
+  title: string
+  points: string[]
+}
+
+export interface AboutJourneyItem {
+  id: string
+  label: string
+  org?: string
+  period?: string
+  kind?: "education" | "work" | "achievement" | "projects"
+}
+
+export interface AboutJourneyEra {
+  id: string
+  stage: string
+  tagline?: string
+  items: AboutJourneyItem[]
+}
+
+export interface AboutExperience {
+  id: string
+  role: string
+  org: string
+  kind?: "work" | "study" | "independent"
+  period?: string
+  summary?: string
+  highlights?: string[]
+}
+
+export interface AboutData {
+  intro: string
+  journey: AboutJourneyEra[]
+  focusAreas: AboutFocusArea[]
+  experience: AboutExperience[]
+  exploring: string[]
+  lookingFor: string
+}
+
 export interface PortfolioData {
   profile: Profile
   featuredProjects: Project[]
@@ -59,4 +99,5 @@ export interface PortfolioData {
   achievements: Achievement[]
   skills: Skill[]
   connect: ConnectItem[]
+  about: AboutData
 }

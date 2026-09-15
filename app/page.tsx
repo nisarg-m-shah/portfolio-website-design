@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import { ContentRow } from "@/components/content-row"
@@ -17,6 +18,7 @@ type ModalItem = Project | Achievement | ConnectItem
 
 export default function HomePage() {
   const data = portfolioData as PortfolioData
+  const router = useRouter()
   const [selectedItem, setSelectedItem] = useState<ModalItem | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null)
@@ -72,7 +74,11 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <HeroSection profile={data.profile} onMoreInfo={scrollToProjects} />
+      <HeroSection
+        profile={data.profile}
+        onViewWork={scrollToProjects}
+        onMoreInfo={() => router.push("/about")}
+      />
 
       {/* Content Rows */}
       <div className="-mt-20 relative z-10 space-y-2 pb-12">

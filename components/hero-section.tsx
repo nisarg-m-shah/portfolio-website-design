@@ -7,10 +7,11 @@ import { Profile } from "@/types/portfolio"
 
 interface HeroSectionProps {
   profile: Profile
+  onViewWork: () => void
   onMoreInfo: () => void
 }
 
-export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
+export function HeroSection({ profile, onViewWork, onMoreInfo }: HeroSectionProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [isMuted, setIsMuted] = useState(true)
   const [isLoaded, setIsLoaded] = useState(false)
@@ -93,7 +94,7 @@ export function HeroSection({ profile, onMoreInfo }: HeroSectionProps) {
             <Button
               size="lg"
               className="gap-2 bg-foreground text-background hover:bg-foreground/90 font-semibold px-5 md:px-8"
-              onClick={onMoreInfo}
+              onClick={onViewWork}
             >
               <Play className="h-5 w-5 fill-current" />
               View Work
